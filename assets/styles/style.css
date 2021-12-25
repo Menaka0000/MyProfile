@@ -82,9 +82,10 @@ body > main > section:nth-child(2) > section:nth-child(1) > div {
     left: 3%;
     margin: auto;
     mso-border-shadow: yes;
+    background-color: rgba(7, 0, 7, .09);
 }
 
-body > main > section:nth-child(2) > section:nth-child(1) > div > p {
+body > main > section:nth-child(2) > section:nth-child(1) > div > p:nth-child(1) {
     position: absolute;
     top: 1%;
     right: 0;
@@ -92,6 +93,7 @@ body > main > section:nth-child(2) > section:nth-child(1) > div > p {
     margin: auto;
     font-size: 2em;
     font-family: 'Titillium Web', sans-serif;
+    /*font-weight: bold;*/
     color: rgb(215, 215, 215);
     text-align: center;
 }
@@ -99,12 +101,24 @@ body > main > section:nth-child(2) > section:nth-child(1) > div > p {
 body > main > section:nth-child(2) > section > div div{
     width: 90%;
     height: 30%;
-    position: absolute;
-    left: 0;
-    right: 0;
+    position: relative;
+ /*   left: 0;
+    right: 0;*/
     top: 7%;
     margin: auto;
     background-image: url("../images/Profile 2.png");
     background-size: cover;
     background-position: center;
+}
+
+body > main > section:nth-child(2) > section:nth-child(1) > div  p:nth-child(3){
+    position: relative;
+    top:8%;
+    /*right: 0;
+    left: 0;*/
+   /* margin: auto;*/
+    font-size: 1em;
+    font-family: 'Titillium Web', sans-serif;
+    color: rgb(215, 215, 215);
+    text-align: center;
 }
