@@ -72,7 +72,7 @@ body > main > section:nth-child(2) {
 }
 
 body > main > section:nth-child(2) > section:nth-child(1) > div {
-    border: 1px solid rgba(240, 240, 240, .5);
+    border: 1px solid rgba(12, 76, 146, .5);
     border-radius: 8px;
     position: absolute;
     height: 90%;
@@ -118,6 +118,7 @@ body > main > section:nth-child(2) > section:nth-child(1) > div  p:nth-child(3){
     left: 0;*/
    /* margin: auto;*/
     font-size: 1em;
+    letter-spacing: 4px;
     font-family: 'Titillium Web', sans-serif;
     color: rgb(215, 215, 215);
     text-align: center;
