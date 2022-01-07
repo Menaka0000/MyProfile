@@ -117,7 +117,7 @@ body > main > section:nth-child(1) > div > p {
 }
 
 
-#section1_anima_1\.0 {
+#section1_anima_1-0 {
     opacity: 0;
     position: absolute;
     margin: auto;
@@ -134,7 +134,7 @@ body > main > section:nth-child(1) > div > p {
     animation-iteration-count: 1;
 }
 
-#section1_anima_1\.1 {
+#section1_anima_1-1 {
     opacity: 0;
     position: absolute;
     margin: auto;
@@ -151,6 +151,114 @@ body > main > section:nth-child(1) > div > p {
     animation-duration: .5s;
     animation-fill-mode: forwards;
     animation-iteration-count: 1;
+}
+#section1_anima_1-2{
+    opacity: 0;
+    position: absolute;
+    margin: auto;
+    width: 600px;
+    left: 12%;
+    right: 0;
+    top: 0;
+    bottom:25%;
+    font-family: 'Titillium Web', sans-serif;
+    color: rgba(8, 124, 250,.7);
+    font-weight: bold;
+    font-size: 1.5em;
+    letter-spacing: 4px;
+    animation-name: anim1_2;
+    animation-delay: 4.5S;
+    animation-duration: .5s;
+    animation-fill-mode: forwards;
+}
+#section1_anima_1-3{
+    opacity: 0;
+    position: absolute;
+    margin: auto;
+    width: 1000px;
+    left: 35%;
+    right: 0;
+    top: 0;
+    bottom:17%;
+    font-family: 'Titillium Web', sans-serif;
+    color: aliceblue;
+    font-size: 1.2em;
+    animation-name: anim1_3;
+    animation-delay: 4.5S;
+    animation-duration: .5s;
+    animation-fill-mode: forwards;
+}
+#section1_anima_1-4{
+    opacity: 0;
+    position: absolute;
+    margin: auto;
+    width: 600px;
+    left: 12%;
+    right: 0;
+    top: 0;
+    bottom:2%;
+    font-family: 'Titillium Web', sans-serif;
+    color: rgba(8, 124, 250,.7);
+    font-weight: bold;
+    font-size: 1.5em;
+    letter-spacing: 4px;
+    animation-name: anim1_2;
+    animation-delay: 5.5S;
+    animation-duration: .5s;
+    animation-fill-mode: forwards;
+}
+#section1_anima_1-5{
+    opacity: 0;
+    position: absolute;
+    margin: auto;
+    width: 1000px;
+    left: 35%;
+    right: 0;
+    top: 5.5%;
+    bottom:0;
+    font-family: 'Titillium Web', sans-serif;
+    color: aliceblue;
+    font-size: 1.2em;
+    animation-name: anim1_3;
+    animation-delay: 5.5S;
+    animation-duration: .5s;
+    animation-fill-mode: forwards;
+}
+#section1_anima_1-6{
+    opacity: 0;
+    position: absolute;
+    margin: auto;
+    width: 600px;
+    left: 12%;
+    right: 0;
+    top: 14%;
+    bottom:0;
+    font-family: 'Titillium Web', sans-serif;
+    color: rgba(8, 124, 250,.7);
+    font-weight: bold;
+    font-size: 1.5em;
+    letter-spacing: 4px;
+    animation-name: anim1_2;
+    animation-delay: 6.5S;
+    animation-duration: .5s;
+    animation-fill-mode: forwards;
+}
+#section1_anima_1-7{
+    opacity: 0;
+    position: absolute;
+    margin: auto;
+    width: 1000px;
+    left: 35%;
+    right: 0;
+    top: 21%;
+    bottom:0;
+    font-family: 'Titillium Web', sans-serif;
+    color: aliceblue;
+    font-size: 1.2em;
+    animation-name: anim1_3;
+    animation-delay: 6.5S;
+    animation-duration: .5s;
+    animation-fill-mode: forwards;
 }
 
 @keyframes anim1_0 {
@@ -180,15 +288,33 @@ body > main > section:nth-child(1) > div > p {
 
 @keyframes anim1_1 {
     from {
-        opacity: .2;
+        opacity: 0;
         bottom: 25%;
     }
     to {
         opacity: 1;
         bottom: 45%;
     }
-
-
+}
+@keyframes anim1_2 {
+    from {
+        opacity: 0;
+        left: 6%;
+    }
+    to {
+        opacity: 1;
+        left: 12%;
+    }
+}
+@keyframes anim1_3 {
+    from {
+        opacity: 0;
+        left: 45%;
+    }
+    to {
+        opacity: 1;
+        left: 35%;
+    }
 }
 
 
