@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            margin: 0;
+        }
+        body > section {
+            position: absolute;
+            width: 20%;
+            height:10%;
+            animation-name: test;
+            animation-duration: 3s;
+            background-color: black;
+            border-radius: 10px;
+            animation-iteration-count: infinite;
+            animation-direction:alternate;
+        }
+
+        @keyframes test {
+            from {
+                top: 0;
+                left: 0;
+
+            }
+            25%{
+                top: 0;
+                left: 80%;
+                background-color: blueviolet;
+                transform: rotate(180deg);
+            }
+            50%{
+                top: 90%;
+                left: 80%;
+                background-color: blue;
+                transform: rotate(360deg);
+            }
+            75%{
+                top: 90%;
+                left:0%;
+                background-color: brown;
+                transform: rotate(180deg);
+            }
+            to {
+                top: 0%;
+                left: 0%;
+                background-color: green;
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+<section>
+
+</section>
+</body>
+</html>

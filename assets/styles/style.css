@@ -62,16 +62,145 @@ body > main > section:nth-child(1) > p {
     color: rgb(215, 215, 215);
 }
 
+body > main > section:nth-child(1) > div:nth-child(2) {
+    height: 900px;
+    width: 450px;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    /*border: 2px solid greenyellow;*/
+    /*background-image: url("../images/Main.png");*/
+    /*background-size: contain;*/
+}
+
+body > main > section:nth-child(1) > div:nth-child(2) > div {
+    position: absolute;
+    margin: auto;
+    top: 7%;
+    left: 0;
+    right: 0;
+    width: 250px;
+    height: 250px;
+    background-image: url("../images/1641522145884.jpg");
+    background-size: contain;
+    border-radius: 20px;
+    /*border: 2px solid red;*/
+}
+
+#anim {
+    /*border: 2px solid greenyellow;*/
+    position: absolute;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 90%;
+}
+
+body > main > section:nth-child(1) > div > p {
+    font-family: 'Titillium Web', sans-serif;
+    color: aliceblue;
+    font-size: 1.5em;
+    width: 300px;
+    height: 50px;
+    position: absolute;
+    margin: auto;
+    top: 35%;
+    left: 0;
+    right: 0;
+    text-align: center;
+
+}
+
+
+#section1_anima_1\.0 {
+    opacity: 0;
+    position: absolute;
+    margin: auto;
+    width: 1000px;
+    left: 10%;
+    right: 0;
+    top: 0;
+    bottom: 15%;
+    font-family: 'Titillium Web', sans-serif;
+    color: aliceblue;
+    font-size: 4em;
+    animation-name: anim1_0;
+    animation-duration: 4s;
+    animation-iteration-count: 1;
+}
+
+#section1_anima_1\.1 {
+    opacity: 0;
+    position: absolute;
+    margin: auto;
+    width: 1200px;
+    left: 20.5%;
+    right: 0;
+    top: 0;
+    bottom: 45%;
+    font-family: 'Titillium Web', sans-serif;
+    color: aliceblue;
+    font-size: 2em;
+    animation-name: anim1_1;
+    animation-delay: 3.5S;
+    animation-duration: .5s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+}
+
+@keyframes anim1_0 {
+    0% {
+        transform: scale(.4);
+        opacity: 25%;
+        /*left: 10%;*/
+        bottom: 10%;
+    }
+    20% {
+        transform: scale(1);
+        opacity: 100%;
+    }
+    90% {
+        transform: scale(1);
+        opacity: 100%;
+        /*left: 10%;*/
+        bottom: 10%;
+    }
+    100% {
+        opacity: 0;
+        /*left: -10%;*/
+        bottom: 30%;
+    }
+
+}
+
+@keyframes anim1_1 {
+    from {
+        opacity: .2;
+        bottom: 25%;
+    }
+    to {
+        opacity: 1;
+        bottom: 45%;
+    }
+
+
+}
+
 
 /*main section 2*/
 
-body > main > section:nth-child(2) {
+body > main > section:nth-child(4) {
     position: relative;
     height: 100vh;
     background-color: rgba(8, 26, 51, 1);
 }
 
-body > main > section:nth-child(2) > section:nth-child(1) > div {
+body > main > section:nth-child(4) > section:nth-child(1) > div {
     border: 1px solid rgba(12, 76, 146, .5);
     border-radius: 8px;
     position: absolute;
@@ -85,7 +214,7 @@ body > main > section:nth-child(2) > section:nth-child(1) > div {
     background-color: rgba(7, 0, 7, .09);
 }
 
-body > main > section:nth-child(2) > section:nth-child(1) > div > p:nth-child(1) {
+body > main > section:nth-child(4) > section:nth-child(1) > div > p:nth-child(1) {
     position: absolute;
     top: 1%;
     right: 0;
@@ -98,12 +227,12 @@ body > main > section:nth-child(2) > section:nth-child(1) > div > p:nth-child(1)
     text-align: center;
 }
 
-body > main > section:nth-child(2) > section > div div{
+body > main > section:nth-child(4) > section > div div {
     width: 90%;
     height: 30%;
     position: relative;
- /*   left: 0;
-    right: 0;*/
+    /*   left: 0;
+       right: 0;*/
     top: 7%;
     margin: auto;
     background-image: url("../images/Profile 2.png");
@@ -111,15 +240,17 @@ body > main > section:nth-child(2) > section > div div{
     background-position: center;
 }
 
+/*
+
 body > main > section:nth-child(2) > section:nth-child(1) > div  p:nth-child(3){
     position: relative;
     top:8%;
-    /*right: 0;
-    left: 0;*/
-   /* margin: auto;*/
+    !*right: 0;
+    left: 0;*!
+   !* margin: auto;*!
     font-size: 1em;
     letter-spacing: 4px;
     font-family: 'Titillium Web', sans-serif;
     color: rgb(215, 215, 215);
     text-align: center;
-}
+}*/
