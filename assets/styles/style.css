@@ -116,21 +116,76 @@ body > main > section:nth-child(1) > div > p {
 
 }
 
+body > main > section:nth-child(1) > section:nth-child(3) { /*all animated elements are here*/
+    position: absolute;
+    width: 80%;
+    height: 60%;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    /*border: 1px solid greenyellow;*/
+}
+
+body > main > section:nth-child(1) > section:nth-child(3) > div:nth-child(1) {
+    position: absolute;
+    width: 997px;
+    height: 300px;
+    top: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+}
+
+body > main > section:nth-child(1) > section:nth-child(3) > div:nth-child(2) {
+    position: absolute;
+    width: 788px;
+    height: 100px;
+    top: 100px;
+    right: 0;
+    left: 0;
+
+    margin: auto;
+    /*border: 1px solid red;*/
+}
+
+body > main > section:nth-child(1) > section:nth-child(3) > div:nth-child(3) {
+    position: absolute;
+    width: 788px;
+    height: 75px;
+    top: 225px;
+    right: 0;
+    left: 0;
+    margin: auto;
+    /*border: 1px solid red;*/
+}
+
+body > main > section:nth-child(1) > section:nth-child(3) > div:nth-child(4) {
+    position: absolute;
+    width: 788px;
+    height: 75px;
+    top: 325px;
+    right: 0;
+    left: 0;
+    margin: auto;
+    /*border: 1px solid red;*/
+}
 
 #section1_anima_1-0 {
     opacity: 0;
     position: absolute;
     margin: auto;
-    width: 1000px;
-    left: 10%;
-    right: 0;
-    top: 0;
-    bottom: 15%;
+    width: fit-content;
+    height: fit-content;
+    left: 0;
+
+    bottom: 0;
     font-family: 'Titillium Web', sans-serif;
     color: aliceblue;
     font-size: 4em;
     animation-name: anim1_0;
-    animation-duration: 4s;
+    animation-duration: 3.5s;
+    animation-delay: .5S;
     animation-iteration-count: 1;
 }
 
@@ -138,11 +193,11 @@ body > main > section:nth-child(1) > div > p {
     opacity: 0;
     position: absolute;
     margin: auto;
-    width: 1200px;
-    left: 20.5%;
-    right: 0;
+    width: fit-content;
+    height: fit-content;
+    left: 20px;
+
     top: 0;
-    bottom: 45%;
     font-family: 'Titillium Web', sans-serif;
     color: aliceblue;
     font-size: 2em;
@@ -152,17 +207,18 @@ body > main > section:nth-child(1) > div > p {
     animation-fill-mode: forwards;
     animation-iteration-count: 1;
 }
-#section1_anima_1-2{
+
+#section1_anima_1-2 {
     opacity: 0;
     position: absolute;
     margin: auto;
-    width: 600px;
-    left: 12%;
-    right: 0;
+    width: fit-content;
+    height: fit-content;
+    left: 0;
     top: 0;
-    bottom:25%;
+
     font-family: 'Titillium Web', sans-serif;
-    color: rgba(8, 124, 250,.7);
+    color: rgba(8, 124, 250, .8);
     font-weight: bold;
     font-size: 1.5em;
     letter-spacing: 4px;
@@ -171,34 +227,34 @@ body > main > section:nth-child(1) > div > p {
     animation-duration: .5s;
     animation-fill-mode: forwards;
 }
-#section1_anima_1-3{
+
+#section1_anima_1-3 {
     opacity: 0;
     position: absolute;
     margin: auto;
-    width: 1000px;
-    left: 35%;
-    right: 0;
-    top: 0;
-    bottom:17%;
+    width: fit-content;
+    height: fit-content;
+    left: 20px;
+    bottom: 0;
     font-family: 'Titillium Web', sans-serif;
-    color: aliceblue;
+    color: rgba(200, 210, 220, .9);
     font-size: 1.2em;
     animation-name: anim1_3;
     animation-delay: 4.5S;
     animation-duration: .5s;
     animation-fill-mode: forwards;
 }
-#section1_anima_1-4{
+
+#section1_anima_1-4 {
     opacity: 0;
     position: absolute;
     margin: auto;
-    width: 600px;
-    left: 12%;
-    right: 0;
+    width: fit-content;
+    height: fit-content;
+    left: 0;
     top: 0;
-    bottom:2%;
     font-family: 'Titillium Web', sans-serif;
-    color: rgba(8, 124, 250,.7);
+    color: rgba(8, 124, 250, .8);
     font-weight: bold;
     font-size: 1.5em;
     letter-spacing: 4px;
@@ -207,34 +263,36 @@ body > main > section:nth-child(1) > div > p {
     animation-duration: .5s;
     animation-fill-mode: forwards;
 }
-#section1_anima_1-5{
+
+#section1_anima_1-5 {
     opacity: 0;
     position: absolute;
     margin: auto;
-    width: 1000px;
-    left: 35%;
-    right: 0;
-    top: 5.5%;
-    bottom:0;
+    width: fit-content;
+    height: fit-content;
+    left: 20px;
+    bottom: 0;
     font-family: 'Titillium Web', sans-serif;
-    color: aliceblue;
+    color: rgba(200, 210, 220, .9);
     font-size: 1.2em;
     animation-name: anim1_3;
     animation-delay: 5.5S;
     animation-duration: .5s;
     animation-fill-mode: forwards;
 }
-#section1_anima_1-6{
+
+#section1_anima_1-6 {
     opacity: 0;
     position: absolute;
     margin: auto;
-    width: 600px;
-    left: 12%;
-    right: 0;
-    top: 14%;
-    bottom:0;
+    width: fit-content;
+    height: fit-content;
+    left: 0;
+
+    top: 0;
+
     font-family: 'Titillium Web', sans-serif;
-    color: rgba(8, 124, 250,.7);
+    color: rgba(8, 124, 250, .8);
     font-weight: bold;
     font-size: 1.5em;
     letter-spacing: 4px;
@@ -243,17 +301,16 @@ body > main > section:nth-child(1) > div > p {
     animation-duration: .5s;
     animation-fill-mode: forwards;
 }
-#section1_anima_1-7{
+
+#section1_anima_1-7 {
     opacity: 0;
     position: absolute;
     margin: auto;
     width: 1000px;
-    left: 35%;
-    right: 0;
-    top: 21%;
-    bottom:0;
+    left: 20px;
+    bottom: 0;
     font-family: 'Titillium Web', sans-serif;
-    color: aliceblue;
+    color: rgba(200, 210, 220, .9);
     font-size: 1.2em;
     animation-name: anim1_3;
     animation-delay: 6.5S;
@@ -265,8 +322,6 @@ body > main > section:nth-child(1) > div > p {
     0% {
         transform: scale(.4);
         opacity: 25%;
-        /*left: 10%;*/
-        bottom: 10%;
     }
     20% {
         transform: scale(1);
@@ -276,12 +331,12 @@ body > main > section:nth-child(1) > div > p {
         transform: scale(1);
         opacity: 100%;
         /*left: 10%;*/
-        bottom: 10%;
+        bottom: 0;
     }
     100% {
         opacity: 0;
         /*left: -10%;*/
-        bottom: 30%;
+        bottom: 150px;
     }
 
 }
@@ -289,31 +344,33 @@ body > main > section:nth-child(1) > div > p {
 @keyframes anim1_1 {
     from {
         opacity: 0;
-        bottom: 25%;
+        top: 150px;
     }
     to {
         opacity: 1;
-        bottom: 45%;
+        top: 0;
     }
 }
+
 @keyframes anim1_2 {
     from {
         opacity: 0;
-        left: 6%;
+        left: -50px;
     }
     to {
         opacity: 1;
-        left: 12%;
+        left: 0;
     }
 }
+
 @keyframes anim1_3 {
     from {
         opacity: 0;
-        left: 45%;
+        left: 75px;
     }
     to {
         opacity: 1;
-        left: 35%;
+        left: 25px;
     }
 }
 
@@ -380,3 +437,22 @@ body > main > section:nth-child(2) > section:nth-child(1) > div  p:nth-child(3){
     color: rgb(215, 215, 215);
     text-align: center;
 }*/
+
+
+/*RESPONSIVE MEDIA QUERIES*/
+@media all and (max-width: 1600px)/*and (min-width: 1024px)*/ {
+    body > main > section:nth-child(1) > div:nth-child(2) > div {
+        top: 15%;
+        width: 200px;
+        height: 200px;
+    }
+
+    body > main > section:nth-child(1) > div:nth-child(2) {
+        width: 400px;
+    }
+
+    body > main > section:nth-child(1) > div > p {
+        top: 40%;
+    }
+
+}
