@@ -336,7 +336,7 @@ body > main > section:nth-child(1) > section:nth-child(3) > div:nth-child(4) {
 
 @keyframes anim1_0 {
     0% {
-        transform: scale(.4);
+        transform: scale(.8);
         opacity: 25%;
     }
     20% {
@@ -399,7 +399,7 @@ body > main > section:nth-child(4) {
     background-color: rgba(8, 26, 51, 1);
 }
 
-body > main > section:nth-child(4) > section:nth-child(1) > div {
+/*body > main > section:nth-child(4) > section:nth-child(1) > div {
     border: 1px solid rgba(12, 76, 146, .5);
     border-radius: 8px;
     position: absolute;
@@ -421,7 +421,7 @@ body > main > section:nth-child(4) > section:nth-child(1) > div > p:nth-child(1)
     margin: auto;
     font-size: 2em;
     font-family: 'Titillium Web', sans-serif;
-    /*font-weight: bold;*/
+    !*font-weight: bold;*!
     color: rgb(215, 215, 215);
     text-align: center;
 }
@@ -430,14 +430,14 @@ body > main > section:nth-child(4) > section > div div {
     width: 90%;
     height: 30%;
     position: relative;
-    /*   left: 0;
-       right: 0;*/
+    !*   left: 0;
+       right: 0;*!
     top: 7%;
     margin: auto;
     background-image: url("../images/Profile 2.png");
     background-size: cover;
     background-position: center;
-}
+}*/
 
 /*
 
