@@ -121,15 +121,15 @@ body > main > section:nth-child(1) > div:nth-child(2) > p:nth-child(3) {
     font-family: 'Titillium Web', sans-serif;
     color: aliceblue;
     font-size: 1em;
-     width: 250px;
-     height: 50px;
+    width: 250px;
+    height: 50px;
     position: absolute;
     margin: auto;
     top: 45%;
-    left:0;
+    left: 0;
     right: 0;
     line-height: .8cm;
-    text-align:left;
+    text-align: left;
 }
 
 body > main > section:nth-child(1) > section:nth-child(3) { /*all animated elements are here*/
@@ -199,10 +199,13 @@ body > main > section:nth-child(1) > section:nth-child(3) > div:nth-child(4) {
     font-family: 'Titillium Web', sans-serif;
     color: aliceblue;
     font-size: 4em;
-    animation-name: anim1_0;
-    animation-duration: 3.5s;
-    animation-delay: .5S;
-    animation-iteration-count: 1;
+    /*animation:  anim1_0 .5s 1 forwards, anim1_0_1 .5s forwards;*/
+    -webkit-animation-name: anim1_0, anim1_0_1;
+    -webkit-animation-duration: .5s, .5s;
+    -webkit-animation-delay: .5s, 3s;
+    -webkit-animation-fill-mode: forwards, forwards;
+
+
 }
 
 #section1_anima_1-1 {
@@ -212,13 +215,12 @@ body > main > section:nth-child(1) > section:nth-child(3) > div:nth-child(4) {
     width: fit-content;
     height: fit-content;
     left: 20px;
-
     top: 0;
     font-family: 'Titillium Web', sans-serif;
     color: aliceblue;
     font-size: 2em;
     animation-name: anim1_1;
-    animation-delay: 3.5S;
+    animation-delay: 3S;
     animation-duration: .5s;
     animation-fill-mode: forwards;
     animation-iteration-count: 1;
@@ -232,7 +234,6 @@ body > main > section:nth-child(1) > section:nth-child(3) > div:nth-child(4) {
     height: fit-content;
     left: 0;
     top: 0;
-
     font-family: 'Titillium Web', sans-serif;
     color: rgba(8, 124, 250, .8);
     font-weight: bold;
@@ -339,22 +340,33 @@ body > main > section:nth-child(1) > section:nth-child(3) > div:nth-child(4) {
         transform: scale(.8);
         opacity: 25%;
     }
-    20% {
+    100% {
         transform: scale(1);
         opacity: 100%;
     }
-    90% {
-        transform: scale(1);
+    /* 90% {
+         transform: scale(1);
+         opacity: 100%;
+         !*left: 10%;*!
+         bottom: 0;
+     }
+     100% {
+         opacity: 0;
+         !*left: -10%;*!
+         bottom: 150px;
+     }*/
+
+}
+
+@keyframes anim1_0_1 {
+    from {
         opacity: 100%;
-        /*left: 10%;*/
         bottom: 0;
     }
-    100% {
+    to {
         opacity: 0;
-        /*left: -10%;*/
         bottom: 150px;
     }
-
 }
 
 @keyframes anim1_1 {
@@ -393,67 +405,197 @@ body > main > section:nth-child(1) > section:nth-child(3) > div:nth-child(4) {
 
 /*main section 2*/
 
-body > main > section:nth-child(4) {
+body > main > section:nth-child(2) {
     position: relative;
     height: 100vh;
     background-color: rgba(8, 26, 51, 1);
 }
 
-/*body > main > section:nth-child(4) > section:nth-child(1) > div {
-    border: 1px solid rgba(12, 76, 146, .5);
-    border-radius: 8px;
-    position: absolute;
-    height: 90%;
-    width: 15%;
-    top: 0;
-    bottom: 0;
-    left: 3%;
-    margin: auto;
-    mso-border-shadow: yes;
-    background-color: rgba(7, 0, 7, .09);
+body > main > section:nth-child(2) > p:nth-child(1) {
+    position: relative;
+    left: 5%;
+    width: fit-content;
+    height: fit-content;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 2em;
+    font-weight: bold;
+    color: rgba(69, 162, 172, 1);
 }
 
-body > main > section:nth-child(4) > section:nth-child(1) > div > p:nth-child(1) {
+body > main > section:nth-child(2) > article {
+    /*border: 1px solid greenyellow;*/
     position: absolute;
-    top: 1%;
+    margin: auto;
+    bottom: 100px;
     right: 0;
     left: 0;
-    margin: auto;
-    font-size: 2em;
-    font-family: 'Titillium Web', sans-serif;
-    !*font-weight: bold;*!
-    color: rgb(215, 215, 215);
-    text-align: center;
+    width: 80%;
+    height: 150px;
 }
 
-body > main > section:nth-child(4) > section > div div {
-    width: 90%;
-    height: 30%;
-    position: relative;
-    !*   left: 0;
-       right: 0;*!
-    top: 7%;
+body > main > section:nth-child(2) > article > p {
+    position: absolute;
+    top: 50px;
+    left: 0;
+    right: 0;
     margin: auto;
-    background-image: url("../images/Profile 2.png");
-    background-size: cover;
-    background-position: center;
-}*/
-
-/*
-
-body > main > section:nth-child(2) > section:nth-child(1) > div  p:nth-child(3){
-    position: relative;
-    top:8%;
-    !*right: 0;
-    left: 0;*!
-   !* margin: auto;*!
-    font-size: 1em;
-    letter-spacing: 4px;
-    font-family: 'Titillium Web', sans-serif;
-    color: rgb(215, 215, 215);
     text-align: center;
-}*/
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 1.2em;
+    color: aliceblue;
+}
 
+body > main > section:nth-child(2) >section:nth-child(3){
+    position: absolute;
+    margin: auto;
+    top: 100px;
+    right: 0;
+    left: 0;
+    /*border: 2px solid greenyellow;*/
+    width: 50%;
+    height: 60%;
+}
+    /*primary & secondary education*/
+body > main > section:nth-child(2) > section:nth-child(3) > div:nth-child(1) {
+    position: absolute;
+    margin: auto;
+    top: 50px;
+    left: 0;
+    /*right: 80px;*/
+    background-color: rgba(32, 33, 36, .3);
+    border: 2px solid rgba(78, 80, 82, .9);
+    border-radius: 10px;
+    width: 300px;
+    height: 75px;
+}
+
+body > main > section:nth-child(2) > section:nth-child(3) > div:nth-child(1) > p:nth-child(2),
+body > main > section:nth-child(2) > section:nth-child(3) > div:nth-child(2) > p:nth-child(2) {
+    position: absolute;
+    margin: auto;
+    width: fit-content;
+    height: fit-content;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    font-size: 2em;
+    color: rgba(240, 248, 255, .8);
+    letter-spacing: 3px;
+    font-family: 'Shadows Into Light', cursive;
+}
+
+body > main > section:nth-child(2) > section:nth-child(3) > div:nth-child(1) > p:nth-child(1),
+body > main > section:nth-child(2) > section:nth-child(3) > div:nth-child(2) > p:nth-child(1){
+    position: absolute;
+    margin: auto;
+    width: fit-content;
+    height: fit-content;
+    top: -30px;
+    left: 0;
+    right: 0;
+    font-size: 1em;
+    color: rgba(8, 124, 250, 1);
+    letter-spacing: 2px;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+/*higher education*/
+body > main > section:nth-child(2) > section:nth-child(3) > div:nth-child(2) {
+    position: absolute;
+    margin: auto;
+    top: 200px;
+    left: 300px;
+    /*right: 80px;*/
+    background-color: rgba(32, 33, 36, .3);
+    border: 2px solid rgba(78, 80, 82, .9);
+    border-radius: 10px;
+    width: 200px;
+    height: 75px;
+}
+
+body > main > section:nth-child(2) > section:nth-child(3) > div:nth-child(3){
+    position: relative;
+    top:75px;
+    left: 50px;
+    width: 300px;
+    height: 200px;
+    background-image: url("../images/arrow1.png");
+    background-size: contain;
+}
+body > main > section:nth-child(2) > section:nth-child(3) > div:nth-child(4){
+    position: relative;
+    top:25px;
+    left: 350px;
+    width: 300px;
+    height: 200px;
+    background-image: url("../images/arrow1.png");
+    background-size: contain;
+}
+body > main > section:nth-child(2) > section:nth-child(3) >button:nth-child(5){
+    position: absolute;
+    height: 40px;
+    width: 115px;
+    border-radius: 10px 5px 10px 5px;
+    border:4px solid rgba(71, 40, 60,1);
+    background-colorcolor: rgba(71, 40, 60,1);
+    cursor: pointer;
+    right: 0;
+    bottom: 0;
+}
+body > main > section:nth-child(2) > section:nth-child(3) >button:nth-child(6){
+    position: absolute;
+    height: 40px;
+    width:115px;
+    border-radius: 10px 5px 10px 5px;
+    border:4px solid rgba(71, 40, 60,1);
+    background-colorcolor: rgba(71, 40, 60,1);
+    cursor: pointer;
+    right: 135px;
+    bottom: 0;
+}
+/*(2006 - 2018)*/
+body > main > section:nth-child(2) > section:nth-child(3)>p:nth-child(7){
+    position: absolute;
+    margin: auto;
+    width: fit-content;
+    height: fit-content;
+    top: 200px;
+    left:125px;
+    font-size: 1em;
+    font-weight: bold;
+    color: rgba(240, 248, 255, .6);
+    letter-spacing: 2px;
+    font-family: 'Titillium Web', sans-serif;
+}
+/*body > main > section:nth-child(2) > section:nth-child(3) > div:nth-child(2) > p:nth-child(2) {
+    position: absolute;
+    margin: auto;
+    width: fit-content;
+    height: fit-content;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    font-size: 2em;
+    color: rgba(240, 248, 255, .8);
+    letter-spacing: 3px;
+    font-family: 'Shadows Into Light', cursive;
+}
+
+body > main > section:nth-child(2) > section:nth-child(3) > div:nth-child(2) > p:nth-child(1) {
+    position: absolute;
+    margin: auto;
+    width: fit-content;
+    height: fit-content;
+    top: -30px;
+    left: 0;
+    right: 0;
+    font-size: 1em;
+    color: rgba(8, 124, 250, 1);
+    letter-spacing: 2px;
+    font-family: 'Titillium Web', sans-serif;
+}*/
 
 /*RESPONSIVE MEDIA QUERIES*/
 @media all and (max-width: 1600px)/*and (min-width: 1024px)*/ {
@@ -472,7 +614,7 @@ body > main > section:nth-child(2) > section:nth-child(1) > div  p:nth-child(3){
     }
 
     body > main > section:nth-child(1) > div:nth-child(2) > p:nth-child(3) {
-        top:50%;
+        top: 50%;
     }
 
 }
