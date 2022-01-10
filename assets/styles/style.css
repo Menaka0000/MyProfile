@@ -921,14 +921,13 @@ font-size: 1em;
 }
 /*RESPONSIVE MEDIA QUERIES*/
 @media all and (max-width: 1600px)/*and (min-width: 1024px)*/ {
-    body > main > section:nth-child(1) > div:nth-child(2) > div {
+    body > main > section:nth-child(1) > div:nth-child(2) > div:nth-child(1) {
         top: 15%;
         width: 200px;
         height: 200px;
     }
 
     body > main > section:nth-child(1) > div:nth-child(2) {
-        top: 100px;
         width: 400px;
     }
 
