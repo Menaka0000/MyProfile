@@ -928,6 +928,7 @@ font-size: 1em;
     }
 
     body > main > section:nth-child(1) > div:nth-child(2) {
+        top: 100px;
         width: 400px;
     }
 
@@ -948,6 +949,10 @@ font-size: 1em;
         width: 405px;
         height: 288px;
         background-size: 100%;
+    }
+
+    body > main > section:nth-child(1) > div:nth-child(2) {
+
     }
 
 }
