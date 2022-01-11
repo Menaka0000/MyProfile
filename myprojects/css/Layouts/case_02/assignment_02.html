@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>case_02</title>
+    <style>
+        * {
+            margin: 0;
+        }
+
+        header {
+            height: 7vh;
+            background-color: rgba(151, 109, 219, .8);
+        }
+
+        footer {
+            /*height: 5vh;*/
+            height: 50px;
+            background-color: rgba(45, 45, 45, 0.8);
+        }
+
+        main {
+            position: relative;
+            min-height: 88vh;
+        }
+
+        main > section:nth-child(1) {
+            position: absolute;
+            width: 15%;
+            top: 0;
+            bottom: 0;
+            background-color: black;
+        }
+
+        main > section:nth-child(2) {
+            position: relative;
+            left: 15%;
+            width: 85%;
+            bottom: 100%;
+            height: 100%;
+            background-color: rgb(48, 50, 56);
+        }
+
+        main > section:nth-child(1) > nav {
+            position: relative;
+            color: azure;
+            font-family: Arial;
+            top: 2.5%;
+
+        }
+
+        main > section:nth-child(1) > nav > ul {
+            list-style-type: none;
+        }
+
+        main > section:nth-child(1) > nav > ul > li {
+            margin-bottom: 20%;
+        }
+
+        header > nav {
+            width: 25%;
+            position: absolute;
+            right: 0;
+            top: 3%;
+            text-align: right;
+        }
+
+        header > nav > ul {
+            font-family: Arial;
+            font-weight: bold;
+            overflow: hidden;
+            list-style-type: none;
+        }
+
+        header > nav > ul > li {
+            float: left;
+            margin-right: 10%;
+        }
+
+        main > section:nth-child(2) > section {
+            position: relative;
+            background-color: azure;
+            margin-bottom: 2%;
+            min-height: 30vh;
+        }
+
+        .ani {
+            border: 1px solid azure;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            width: calc(99.9% / 3);
+            background-color: rgba(78, 80, 82, .5);
+        }
+
+        main > section:nth-child(2) > section > div:nth-child(2) {
+            left: calc(99.9% / 3);
+        }
+
+        main > section:nth-child(2) > section > div:nth-child(3) {
+            left: calc(99.9% / 3 * 2);
+        }
+
+        main > section:nth-child(2) p {
+            position: relative;
+            width: 98%;
+            left: 2%;
+            top: 2%;
+            color: rgb(203, 203, 203);
+        }
+
+        footer > p {
+            position: relative;
+            color: azure;
+            font-family: Arial;
+            text-align: center;
+            top: 35%;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <nav>
+        <ul>
+            <li>Home</li>
+            <li>Services</li>
+            <li>Contact</li>
+            <li>About Us</li>
+        </ul>
+    </nav>
+</header>
+<main>
+    <section>
+        <nav>
+            <ul>
+                <li>Home</li>
+                <li>Services</li>
+                <li>Contact</li>
+                <li>About Us</li>
+            </ul>
+        </nav>
+    </section>
+    <section>
+
+        <section>
+            <div class="ani"></div>
+            <div class="ani"></div>
+            <div class="ani"></div>
+        </section>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi ipsa natus nisi odit quae. Adipisci
+            laborum mollitia odio officiis quis, reiciendis soluta tempore tenetur unde. Alias cumque enim laudantium
+            nostrum.</p>
+        <p>Adipisci corporis culpa, dicta harum in iusto nam necessitatibus optio quae quo reiciendis repudiandae. A
+            architecto consequatur delectus dignissimos doloribus dolorum iure laudantium quaerat rem, rerum saepe sint
+            voluptas, voluptatum!</p>
+        <p>Ab alias commodi eos est ex harum id ipsam mollitia non odio, perspiciatis, provident quaerat quod quos
+            repellendus tempore tenetur veniam, veritatis voluptatem voluptates? Deleniti deserunt illo temporibus
+            veritatis voluptatibus.</p>
+        <p>Asperiores et illo illum minus, perspiciatis placeat sint voluptas voluptatem! Ad amet beatae dicta enim, id
+            illum iusto laboriosam minus, perferendis placeat praesentium similique suscipit? Aliquid aut dolorem
+            explicabo molestias?</p>
+        <p>Accusantium architecto aspernatur consectetur corporis dolorem enim explicabo hic impedit ipsa iste, itaque
+            iusto natus nobis nostrum numquam odio officia pariatur porro possimus quis ratione similique sunt tempora
+            vitae voluptate.</p>
+        <p>Culpa deserunt, dolorem dolorum error harum ipsa, omnis perferendis perspiciatis ratione sed sequi similique
+            ut vitae? Commodi corporis cupiditate est, id molestias nihil nostrum officia, quod repellat sint sit
+            voluptate!</p>
+        <p>Animi doloremque dolores eius sapiente voluptatem! A doloremque excepturi ipsum magni perspiciatis sit
+            tenetur velit? Amet ea error facere harum iure optio quam repellat similique. Facilis maiores possimus quam
+            vero.</p>
+        <p>Dolor, error, reprehenderit! Accusamus autem blanditiis consequatur ea, harum inventore ipsam, laborum magnam
+            necessitatibus neque omnis quisquam reprehenderit tenetur veniam voluptate? Dicta earum excepturi iusto
+            laborum magni reprehenderit sed totam.</p>
+        <p>Architecto eligendi iusto voluptatum. Alias architecto assumenda consequatur, corporis dicta dignissimos
+            dolorem harum illo ipsa ipsam ipsum itaque maiores minus natus necessitatibus nulla placeat quae quaerat
+            quibusdam saepe soluta voluptatem!</p>
+        <p>Accusantium aliquid amet aspernatur beatae consequuntur cumque delectus eos eveniet, explicabo illo illum
+            itaque labore libero maiores nobis perferendis quae quaerat sunt velit veritatis vitae voluptas voluptates
+            voluptatibus! Dolores, harum.</p>
+        <p>Eligendi fugiat omnis porro soluta tenetur. Animi at eaque, ex fugit ipsum quos ratione! Accusantium facilis
+            illo impedit itaque nemo qui quibusdam? Alias dolor enim eos, odit officia quasi quibusdam?</p>
+        <p>Accusantium alias dolorum eum, magni nesciunt quibusdam voluptates! Blanditiis distinctio iure laboriosam
+            quas totam. Ad amet atque beatae consequuntur, eaque fuga maxime modi, neque obcaecati omnis, porro possimus
+            totam voluptatem!</p>
+        <p>Alias amet consequatur excepturi nemo officiis quaerat quibusdam quidem quo! Accusamus cum deleniti et, ex
+            harum hic maxime natus nemo nisi nobis odio officiis placeat quas sint veniam. Animi, eos!</p>
+        <p>Dicta illo iste porro reprehenderit. Accusamus accusantium aliquam, consectetur ea eos esse ex in magni nulla
+            officiis optio, quae quidem rem! Dolorem ea id impedit, labore necessitatibus optio sit tempora?</p>
+        <p>Adipisci, distinctio dolor doloremque eum fugit hic, id itaque neque nobis officia perspiciatis quae rem
+            similique soluta vero! Accusamus aliquam laborum nesciunt perspiciatis. Ab animi beatae delectus in libero
+            sapiente?</p>
+        <p>Aspernatur aut commodi culpa dicta dolorem ea est excepturi facere iste magnam minus necessitatibus placeat
+            porro, quaerat rerum sed ut voluptate voluptatibus. Aut in labore nostrum nulla provident sit
+            voluptatem.</p>
+        <p>Assumenda dolor incidunt maiores nihil provident? Aperiam at deserunt fuga illum nesciunt nihil non officia
+            repellendus sapiente! Aliquid, blanditiis dolorem est ex fuga illo nemo odio optio quia tempora vero!</p>
+        <p>Aliquid architecto consequuntur deleniti, iste perferendis repudiandae. Delectus ipsam molestiae nemo
+            praesentium, repudiandae voluptatem? Ad commodi consequuntur eius eos illum inventore laudantium nulla quia,
+            quisquam sunt. Adipisci explicabo ipsam repellendus!</p>
+        <p>A, accusamus accusantium architecto assumenda aut blanditiis consequuntur cupiditate ducimus ea
+            exercitationem inventore labore magnam maiores minima modi nobis praesentium quas quos ratione, reiciendis
+            repellat ut veniam voluptas, voluptates voluptatum?</p>
+        <p>Aliquam cumque eius quam qui sapiente sed sunt voluptatem! Consequuntur delectus dicta, facere incidunt natus
+            nostrum qui quisquam saepe sed soluta tempora ullam veritatis vero. Aut dolores facilis ipsam quo!</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi ipsa natus nisi odit quae. Adipisci
+            laborum mollitia odio officiis quis, reiciendis soluta tempore tenetur unde. Alias cumque enim laudantium
+            nostrum.</p>
+        <p>Adipisci corporis culpa, dicta harum in iusto nam necessitatibus optio quae quo reiciendis repudiandae. A
+            architecto consequatur delectus dignissimos doloribus dolorum iure laudantium quaerat rem, rerum saepe sint
+            voluptas, voluptatum!</p>
+        <p>Ab alias commodi eos est ex harum id ipsam mollitia non odio, perspiciatis, provident quaerat quod quos
+            repellendus tempore tenetur veniam, veritatis voluptatem voluptates? Deleniti deserunt illo temporibus
+            veritatis voluptatibus.</p>
+        <p>Asperiores et illo illum minus, perspiciatis placeat sint voluptas voluptatem! Ad amet beatae dicta enim, id
+            illum iusto laboriosam minus, perferendis placeat praesentium similique suscipit? Aliquid aut dolorem
+            explicabo molestias?</p>
+        <p>Accusantium architecto aspernatur consectetur corporis dolorem enim explicabo hic impedit ipsa iste, itaque
+            iusto natus nobis nostrum numquam odio officia pariatur porro possimus quis ratione similique sunt tempora
+            vitae voluptate.</p>
+        <p>Culpa deserunt, dolorem dolorum error harum ipsa, omnis perferendis perspiciatis ratione sed sequi similique
+            ut vitae? Commodi corporis cupiditate est, id molestias nihil nostrum officia, quod repellat sint sit
+            voluptate!</p>
+        <p>Animi doloremque dolores eius sapiente voluptatem! A doloremque excepturi ipsum magni perspiciatis sit
+            tenetur velit? Amet ea error facere harum iure optio quam repellat similique. Facilis maiores possimus quam
+            vero.</p>
+        <p>Dolor, error, reprehenderit! Accusamus autem blanditiis consequatur ea, harum inventore ipsam, laborum magnam
+            necessitatibus neque omnis quisquam reprehenderit tenetur veniam voluptate? Dicta earum excepturi iusto
+            laborum magni reprehenderit sed totam.</p>
+        <p>Architecto eligendi iusto voluptatum. Alias architecto assumenda consequatur, corporis dicta dignissimos
+            dolorem harum illo ipsa ipsam ipsum itaque maiores minus natus necessitatibus nulla placeat quae quaerat
+            quibusdam saepe soluta voluptatem!</p>
+        <p>Accusantium aliquid amet aspernatur beatae consequuntur cumque delectus eos eveniet, explicabo illo illum
+            itaque labore libero maiores nobis perferendis quae quaerat sunt velit veritatis vitae voluptas voluptates
+            voluptatibus! Dolores, harum.</p>
+        <p>Eligendi fugiat omnis porro soluta tenetur. Animi at eaque, ex fugit ipsum quos ratione! Accusantium facilis
+            illo impedit itaque nemo qui quibusdam? Alias dolor enim eos, odit officia quasi quibusdam?</p>
+        <p>Accusantium alias dolorum eum, magni nesciunt quibusdam voluptates! Blanditiis distinctio iure laboriosam
+            quas totam. Ad amet atque beatae consequuntur, eaque fuga maxime modi, neque obcaecati omnis, porro possimus
+            totam voluptatem!</p>
+        <p>Alias amet consequatur excepturi nemo officiis quaerat quibusdam quidem quo! Accusamus cum deleniti et, ex
+            harum hic maxime natus nemo nisi nobis odio officiis placeat quas sint veniam. Animi, eos!</p>
+        <p>Dicta illo iste porro reprehenderit. Accusamus accusantium aliquam, consectetur ea eos esse ex in magni nulla
+            officiis optio, quae quidem rem! Dolorem ea id impedit, labore necessitatibus optio sit tempora?</p>
+        <p>Adipisci, distinctio dolor doloremque eum fugit hic, id itaque neque nobis officia perspiciatis quae rem
+            similique soluta vero! Accusamus aliquam laborum nesciunt perspiciatis. Ab animi beatae delectus in libero
+            sapiente?</p>
+        <p>Aspernatur aut commodi culpa dicta dolorem ea est excepturi facere iste magnam minus necessitatibus placeat
+            porro, quaerat rerum sed ut voluptate voluptatibus. Aut in labore nostrum nulla provident sit
+            voluptatem.</p>
+        <p>Assumenda dolor incidunt maiores nihil provident? Aperiam at deserunt fuga illum nesciunt nihil non officia
+            repellendus sapiente! Aliquid, blanditiis dolorem est ex fuga illo nemo odio optio quia tempora vero!</p>
+        <p>Aliquid architecto consequuntur deleniti, iste perferendis repudiandae. Delectus ipsam molestiae nemo
+            praesentium, repudiandae voluptatem? Ad commodi consequuntur eius eos illum inventore laudantium nulla quia,
+            quisquam sunt. Adipisci explicabo ipsam repellendus!</p>
+        <p>A, accusamus accusantium architecto assumenda aut blanditiis consequuntur cupiditate ducimus ea
+            exercitationem inventore labore magnam maiores minima modi nobis praesentium quas quos ratione, reiciendis
+            repellat ut veniam voluptas, voluptates voluptatum?</p>
+        <p>Aliquam cumque eius quam qui sapiente sed sunt voluptatem! Consequuntur delectus dicta, facere incidunt natus
+            nostrum qui quisquam saepe sed soluta tempora ullam veritatis vero. Aut dolores facilis ipsam quo!</p>
+    </section>
+</main>
+<footer>
+    <p>IJSE@2021</p>
+</footer>
+</body>
+</html>

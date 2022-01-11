@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>case_01</title>
+  <style>
+    div {
+      position: relative;
+      width: 75px;
+      height: 75px;
+      background-color: blue;
+      margin-bottom: 30px;
+      border-radius: 10px;
+      transition-property: width,background-color;
+      transition-duration: 1s;
+      text-aligna: center;
+    }
+
+    div:hover {
+      width: 225px;
+      background-color: blueviolet;
+      transition-delay: .2s;
+      transition-property: width,background-color;
+      transition-duration: 1s;
+    }
+
+    div p{
+      position: absolute;
+      top:12%;
+      left: 40%;
+      width:100px;
+      height: 75px;
+      opacity: 0;
+      font-size: 20px;
+    }
+
+    div:hover p{
+      opacity: 100;
+      color: azure;
+      font-family: Arial;
+      text-aligna: center;
+      transition-delay: .5s;
+      transition-duration: 1s;
+    }
+  </style>
+</head>
+<body>
+<div>
+  <P>Home</P>
+</div>
+<div><P>Services</P></div>
+<div><P>Contact</P></div>
+<div><P>About Us</P></div>
+</body>
+</html>

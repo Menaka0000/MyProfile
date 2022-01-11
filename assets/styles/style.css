@@ -719,7 +719,20 @@ body > main > section:nth-child(4)>section:nth-child(2)>div:nth-child(1){
     width: 504px;
     height: 360px;
 }
-
+#btnAssign{
+    position: absolute;
+    margin: auto;
+    width: 150px;
+    height:40px;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 1em;
+    font-weight: bold;
+    border-radius:5px 10px 5px 10px;
+    left: 5%;
+    top: 100px;
+    background-color: rgba(200, 210, 220,.6);
+    cursor: pointer;
+}
 /*main section 5*/
 
 body > main > section:nth-child(5) {
@@ -954,4 +967,19 @@ font-size: 1em;
 
     }
 
+}
+@media all and (max-width: 425px)and (min-width: 320px) {
+    body > header > div {
+        margin: auto;
+        width: 90%;
+        top: 1.5vh;
+        right: 0;
+        left: 0;
+    }
+    body > header > div > nav > ul li a {
+        font-size: 1em;
+    }
+    body > main > section:nth-child(1) > section:nth-child(3) {
+        display: none;
+    }
 }

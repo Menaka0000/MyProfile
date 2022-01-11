@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+}
+
+main > section {
+    position: relative;
+    width: calc(100% / 3);
+    height: 100vh;
+}
+
+main > section:nth-child(1) {
+    background-color: rgba(0, 0, 0, .1);
+}
+
+main > section:nth-child(2) {
+    background-color: rgba(0, 0, 0, .2);
+}
+
+main > section:nth-child(3) {
+    background-color: rgba(0, 0, 0, .3);
+}
+
+main > section:nth-child(1) > p:nth-child(1),
+main > section:nth-child(2) > p:nth-child(1),
+main > section:nth-child(3) > p:nth-child(1) {
+    position: absolute;
+    margin: auto;
+    width: fit-content;
+    top: 20px;
+    left: 0;
+    right: 0;
+    font-family: 'Titillium Web', sans-serif;
+    color: rgba(0, 0, 0, 1);
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+main > section:nth-child(1) > section:nth-child(2),
+main > section:nth-child(2) > section:nth-child(2),
+main > section:nth-child(3) > section:nth-child(2) {
+    width: 60%;
+    height: 80%;
+    position: absolute;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    top: 10%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+main > section:nth-child(1) > section:nth-child(2) > div,
+main > section:nth-child(3) > section:nth-child(2) > div,
+main > section:nth-child(2) > section:nth-child(2) > div {
+    border-radius: 5px;
+    position: relative;
+    height: calc(80% / 4);
+    width: 100%;
+    background-color: rgba(0, 0, 0, .2);
+    box-shadow: black;
+    cursor: pointer;
+}
+main > section:nth-child(2) > section:nth-child(2) > div:nth-child(1),
+main > section:nth-child(2) > section:nth-child(2) > div:nth-child(2){
+    background-color: rgba(0, 0, 0, 0) !important;
+    cursor: default!important;
+
+}
+
+/*main > section:nth-child(2) > section:nth-child(2) > div:nth-child(2) {
+    background-color: rgba(0, 0, 0, .3) !important;
+    bottom: 25% !important;
+}
+main > section:nth-child(2) > section:nth-child(2){
+    justify-content: end!important;
+}*/
+/*
+main > section:nth-child(1)> section:nth-child(2)>div:nth-child(4){
+    background-image: url("../images/c4.png");
+    background-size: 20%;
+    background-repeat: no-repeat;
+}
+main > section:nth-child(1)> section:nth-child(2)div:nth-child(4){
+    bottom: calc(80%/4);
+}
+main > section:nth-child(1)> section:nth-child(2)div:nth-child(3){
+    bottom: calc(80%/2);
+}
+main > section:nth-child(1)> section:nth-child(2)div:nth-child(2){
+    bottom: calc(80%/4*3);
+}
+*/
+
+main > section:nth-child(1) > section:nth-child(2) > div:nth-child(1) > img,
+main > section:nth-child(1) > section:nth-child(2) > div:nth-child(2) > img,
+main > section:nth-child(1) > section:nth-child(2) > div:nth-child(3) > img,
+main > section:nth-child(1) > section:nth-child(2) > div:nth-child(4) > img {
+    opacity: .7;
+    border-radius: 5px;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    left: 5px;
+    bottom: 0;
+}
+
+main > section:nth-child(1) > section:nth-child(2) > div:nth-child(1) > p,
+main > section:nth-child(1) > section:nth-child(2) > div:nth-child(2) > p,
+main > section:nth-child(1) > section:nth-child(2) > div:nth-child(3) > p,
+main > section:nth-child(1) > section:nth-child(2) > div:nth-child(4) > p {
+    position: absolute;
+    margin: auto;
+    width: fit-content;
+    height: fit-content;
+    top: 0;
+    bottom: 0;
+    right: 25%;
+    font-family: 'Titillium Web', sans-serif;
+    color: rgba(0, 0, 0, 1);
+    font-weight: bold;
+    font-size: 1em;
+}
+.w_o_Image{
+    position: absolute;
+    margin: auto;
+    width: fit-content;
+    height: fit-content;
+    top: 0;
+    bottom: 0;
+    right:0;
+    left: 0;
+    font-family: 'Titillium Web', sans-serif;
+    color: rgba(0, 0, 0, 1);
+    font-weight: bold;
+    font-size: 1em;
+}

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="assets/css/normalize.css" rel="stylesheet">
+    <style>
+        section {
+            width: 50%;
+            height: 50%;
+            position: absolute;
+        }
+
+        body > section:nth-child(1) {
+            background-color: red;
+        }
+
+        body > section:nth-child(2) {
+            right: 0;
+            background-color: green;
+        }
+
+        body > section:nth-child(3) {
+            bottom: 0;
+            right: 0;
+            background-color: deeppink;
+        }
+
+        body > section:nth-child(4) {
+            bottom: 0;
+            left: 0;
+            background-color: darkgoldenrod;
+        }
+
+        div {
+            width: 200px;
+            height: 200px;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            background-color: white;
+            margin: auto;
+        }
+
+        body > div > div {
+            width: 50%;
+            height: 50%;
+            border-radius: 100px;
+            background-color: red;
+            position: absolute;
+            margin: auto;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+        }
+
+        body > section > div > div {
+            width: 50%;
+            height: 50%;
+            background-color: red;
+        }
+
+        body > section:nth-child(6) {
+            top: 0;
+            left: 0;
+            border-bottom-right-radius: 200px;
+        }
+
+        body > section:nth-child(7) {
+            top: -100px;
+            left: 0;
+            right: 0;
+            border-bottom-left-radius: 200px;
+            border-bottom-right-radius: 200px;
+            margin: auto;
+        }
+
+        body > section:nth-child(8) {
+            top: 0;
+            right: 0;
+            border-bottom-left-radius: 200px;
+        }
+
+        body > section:nth-child(9) {
+            bottom: 0;
+            right: 0;
+            border-top-left-radius: 200px;
+        }
+
+        body > section:nth-child(10) {
+            bottom: 0;
+            border-top-right-radius: 200px;
+        }
+
+        body > section:nth-child(11) {
+            bottom: -100px;
+            left: 0;
+            right: 0;
+            border-top-left-radius: 200px;
+            border-top-right-radius: 200px;
+            margin: auto;
+        }
+
+        .mainDiv {
+            border-radius: 100px;
+        }
+
+        .topSections {
+            background-color: white;
+            width: 200px;
+            height: 200px;
+        }
+    </style>
+
+</head>
+<body>
+<section>
+    <div class="mainDiv">
+        <div></div>
+    </div>
+</section>
+
+<section>
+    <div class="mainDiv">
+        <div></div>
+    </div>
+</section>
+
+<section>
+    <div class="mainDiv">
+        <div></div>
+    </div>
+</section>
+
+<section>
+    <div class="mainDiv">
+        <div></div>
+    </div>
+</section>
+
+<div>
+    <div></div>
+</div>
+
+<section class="topSections"></section>
+<section class="topSections"></section>
+<section class="topSections"></section>
+<section class="topSections"></section>
+<section class="topSections"></section>
+<section class="topSections"></section>
+</body>
+</html>
