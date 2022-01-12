@@ -67,7 +67,7 @@ main > section:nth-child(3) > section:nth-child(2) {
     background-color: rgba(0, 0, 0, .2);
     box-shadow: black;
     cursor: pointer;}
-main > section:nth-child(1) > section:nth-child(2) > div,
+/*main > section:nth-child(1) > section:nth-child(2) > div,
 main > section:nth-child(3) > section:nth-child(2) > div,
 main > section:nth-child(2) > section:nth-child(2) > div {
     border-radius: 5px;
@@ -77,7 +77,7 @@ main > section:nth-child(2) > section:nth-child(2) > div {
     background-color: rgba(0, 0, 0, .2);
     box-shadow: black;
     cursor: pointer;
-}
+}*/
 main > section:nth-child(2) > section:nth-child(2) > a:nth-child(1),
 main > section:nth-child(2) > section:nth-child(2) > a:nth-child(2){
     background-color: rgba(0, 0, 0, 0) !important;
@@ -117,7 +117,7 @@ main > section:nth-child(1)> section:nth-child(2)div:nth-child(2){
     left: 5px;
     bottom: 0;
 }
-main > section:nth-child(1) > section:nth-child(2) > div:nth-child(1) > img,
+/*main > section:nth-child(1) > section:nth-child(2) > div:nth-child(1) > img,
 main > section:nth-child(1) > section:nth-child(2) > div:nth-child(2) > img,
 main > section:nth-child(1) > section:nth-child(2) > div:nth-child(3) > img,
 main > section:nth-child(1) > section:nth-child(2) > div:nth-child(4) > img {
@@ -128,7 +128,7 @@ main > section:nth-child(1) > section:nth-child(2) > div:nth-child(4) > img {
     top: 0;
     left: 5px;
     bottom: 0;
-}
+}*/
 .anTag > p{
     position: absolute;
     margin: auto;
@@ -142,7 +142,7 @@ main > section:nth-child(1) > section:nth-child(2) > div:nth-child(4) > img {
     font-weight: bold;
     font-size: 1em;
 }
-main > section:nth-child(1) > section:nth-child(2) > div:nth-child(1) > p,
+/*main > section:nth-child(1) > section:nth-child(2) > div:nth-child(1) > p,
 main > section:nth-child(1) > section:nth-child(2) > div:nth-child(2) > p,
 main > section:nth-child(1) > section:nth-child(2) > div:nth-child(3) > p,
 main > section:nth-child(1) > section:nth-child(2) > div:nth-child(4) > p {
@@ -157,16 +157,16 @@ main > section:nth-child(1) > section:nth-child(2) > div:nth-child(4) > p {
     color: rgba(0, 0, 0, 1);
     font-weight: bold;
     font-size: 1em;
-}
+}*/
 .w_o_Image{
     position: absolute;
     margin: auto;
     width: fit-content;
     height: fit-content;
-    top: 0;
-    bottom: 0;
-    right:0;
-    left: 0;
+    top: 0!important;
+    bottom: 0!important;
+    right:0!important;
+    left: 0!important;
     font-family: 'Titillium Web', sans-serif;
     color: rgba(0, 0, 0, 1);
     font-weight: bold;
