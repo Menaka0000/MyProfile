@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/normalize.css">
+    <style>
+        section{
+            position: relative;
+            width: 100vw;
+            height: 100vh;
+            overflow: hidden;
+        }
+/*        @keyframes slider {
+            0%,20%{
+                margin-left: 0;
+            }
+            25%,45%{
+                margin-left: -100vw;
+            }
+            50%,70%{
+                margin-left: -200vw;
+            }
+            75%,100%{
+                margin-left: -300vw;
+            }
+        }*/
+
+      @keyframes Slider1-1 {
+          from{
+
+              margin-left: 0;
+          }
+          to{
+              margin-left: -100vw;
+          }
+      }
+        @keyframes Slider1-2 {
+          from{
+              margin-left: -100vw;
+          }
+          to{
+              margin-left: -200vw;
+          }
+      }
+        @keyframes Slider1-3 {
+          from{
+              margin-left: -200vw;
+          }
+          to{
+              margin-left: -300vw;
+          }
+        }
+
+
+        section > div:nth-child(1){
+            display: flex;
+            flex-direction: row;
+            width: 400vw;
+            height: 100vh;
+            animation-name: slider;
+            animation-duration: 8s;/*
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            overflow: hidden;
+            animation-timing-function: ease;*/
+            -webkit-animation-name: Slider1-1, Slider1-2,Slider1-3;
+            -webkit-animation-duration: 1s, 1s,1s;
+            -webkit-animation-delay: 1.5s, 4.5s,7.5s;
+            -webkit-animation-fill-mode: forwards, forwards,forwards;
+            -webkit-animation-timing-function: ease-in,ease-in,ease-in;
+            overflow: hidden;
+
+           /* -webkit-animation-direction: alternate,alternate,alternate;
+            animation-timing-function: linear;
+            animation-direction: alternate;
+            animation-iteration-count: infinite;*/
+        }
+
+        section > div:nth-child(1) > div:nth-child(1){
+            position: relative;
+            background: url(assets/frank-mckenna-OD9EOzfSOh0-unsplash.jpg);
+            width: 100%;
+            height: 100%;
+            background-position: center;
+            background-size: 100%;
+        }
+        section > div:nth-child(1) > div:nth-child(2){
+            position: relative;
+            background: url(assets/joseph-barrientos-oQl0eVYd_n8-unsplash.jpg);
+            width: 100%;
+            height: 100%;
+            background-position: center;
+            background-size: 100%;
+        }
+        section > div:nth-child(1) > div:nth-child(3){
+            position: relative;
+            width: 100%;
+            height: 100%;
+            background: url(assets/matt-hardy-6ArTTluciuA-unsplash.jpg);
+            background-position: center;
+            background-size: 100%;
+        }
+        section > div:nth-child(1) > div:nth-child(4){
+            position: relative;
+            width: 100%;
+            height: 100%;
+            background: url(assets/thomas-vimare-IZ01rjX0XQA-unsplash.jpg);
+            background-position: center;
+            background-size: 100%;
+        }
+    </style>
+</head>
+<body>
+<section>
+    <div>
+        <div>
+        </div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+</section>
+</body>
+</html>
