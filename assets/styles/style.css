@@ -1128,6 +1128,9 @@ body > main > section:nth-child(5) > section > div:nth-child(7) > p {
     body > main > section:nth-child(1) > div:nth-child(2) {
 
     }
+    #skill-text{
+        bottom: -160px;
+    }
 
 }
 
