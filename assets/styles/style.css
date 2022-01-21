@@ -4,7 +4,9 @@
 }
 
 /*css that belongs to header*/
-
+a{
+    color: rgba(240, 248, 255, 1);
+}
 header {
     text-align: right;
     position: absolute;
@@ -475,7 +477,7 @@ body > main > section:nth-child(2) > article > p {
     text-align: center;
     font-family: 'Titillium Web', sans-serif;
     font-size: 1.2em;
-    color: aliceblue;
+    color: rgba(240, 248, 255, .8);
 }
 
 body > main > section:nth-child(2) > section:nth-child(3) {
@@ -757,13 +759,21 @@ body > main > section:nth-child(3) > section:nth-child(2) {
     color: rgba(255, 255, 255, .8);
 }
 
-body > main > section:nth-child(3) > section:nth-child(2) > div:nth-child(1):hover,
-body > main > section:nth-child(3) > section:nth-child(2) > div:nth-child(2):hover,
-body > main > section:nth-child(3) > section:nth-child(2) > div:nth-child(3):hover,
-body > main > section:nth-child(3) > section:nth-child(2) > div:nth-child(4):hover,
-body > main > section:nth-child(4) > section:nth-child(2) > div:nth-child(1):hover,
-body > main > section:nth-child(4) > section:nth-child(2) > div:nth-child(2):hover,
-body > main > section:nth-child(4) > section:nth-child(2) > div:nth-child(3):hover {
+#skill-text{
+    position: absolute;
+    margin: auto;
+    width: 700px;
+    height: fit-content;
+    text-align: center;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 1.2em;
+    color: rgba(240, 248, 255, .8);
+    left: 0;
+    right: 0;
+    bottom: -100px;
+
+}
+.techDiv:hover,.projDiv:hover {
     animation-name: scaleUp;
     animation-duration: .5s;
     animation-fill-mode: both;
@@ -835,25 +845,23 @@ body > main > section:nth-child(4) > section:nth-child(2) {
     color: rgba(255, 255, 255, .8);
     z-index: 1;
 }
-body > main > section:nth-child(4) > section:nth-child(2) > div:nth-child(1) {
-    /* background-image: url("../images/saman_ri.png");
-     width: 504px;
-     height: 360px;*/
+
+
+#pro-text{
+    position: absolute;
+    margin: auto;
+    width: 848px;
+    height: fit-content;
+    text-align: center;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 1.2em;
+    color: rgba(240, 248, 255, .8);
+    left: 0;
+    right: 0;
+    bottom: -100px;
 }
 
-body > main > section:nth-child(4) > section:nth-child(2) > div:nth-child(2) {
-    /*  background-image: url("../images/final pro.png");
-      width: 504px;
-      height: 360px;*/
-}
-
-body > main > section:nth-child(4) > section:nth-child(2) > div:nth-child(3) {
-    /* background-image: url("../images/supermarket.png");
-     width: 504px;
-     height: 360px;*/
-}
-
-#Assign {
+/*#Assign {
     position: absolute;
     margin: auto;
     width: fit-content;
@@ -861,13 +869,13 @@ body > main > section:nth-child(4) > section:nth-child(2) > div:nth-child(3) {
     font-family: 'Titillium Web', sans-serif;
     font-size: 1em;
     color: #d1dae8;
-    /*font-weight: bold;*/
-    /*border-radius: 5px 10px 5px 10px;*/
+    !*font-weight: bold;*!
+    !*border-radius: 5px 10px 5px 10px;*!
     left: 5%;
     top: 100px;
-    /*background-color: rgba(200, 210, 220, .6);*/
+    !*background-color: rgba(200, 210, 220, .6);*!
     cursor: pointer;
-}
+}*/
 
 /*main section 5*/
 
