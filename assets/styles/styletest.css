@@ -1,0 +1,56 @@
+* {
+    color: rgba(255,255,255,1);
+    font-family: 'Titillium Web', sans-serif;
+}
+
+body{
+    background-color: rgba(33, 37, 41,.9);
+}
+.input{
+    color: rgba(0,0,0,.8);
+}
+#form1 {
+    position: absolute;
+    margin: auto;
+    right: 100px;
+    top: 0;
+    bottom: 0;
+    width: 20%;
+    height: fit-content;
+}
+
+#inputSearch {
+    position: relative;
+    top: 8px;
+}
+
+.dropUp {
+    position: relative;
+    top: 8px;
+}
+
+.navbar-brand {
+    position: relative;
+    left: 5px;
+    bottom: 2px;
+}
+.colorFix1,.colorFix1:focus{
+    font-weight: bold;
+    color:rgba(0,0,0,1);
+}
+/*
+#btnMain{
+  position: absolute;
+  width: fit-content;
+  height: fit-content;
+  margin: auto;
+  left: 0;
+  right: 0;
+  !*bottom: 100px;*!
+}*/
+@media all and (max-width: 991px) {
+    #inputSearch {
+        position: relative;
+        top: 0;
+    }
+}
