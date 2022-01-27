@@ -22,7 +22,7 @@
     width: 8px;
 }
 body{
-    height: 100vh !important;
+    height: 100vh;
     background: linear-gradient( rgba(33, 37, 41,.9), rgba(33, 37, 41,1));
 }
 .input{

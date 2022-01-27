@@ -1,36 +1,42 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: 'Titillium Web', sans-serif;
+    color: #d1dae8!important;
 }
+#spa{
+    position: relative;
+    height:70vh;
 
-main {
-    width: 100vw;
+}
+#basics-main {
+    color: #d1dae8;
     height: 100vh;
     display: flex;
     justify-content: space-between;
 }
 
-main > section {
+.basics {
     position: relative;
     width: calc(100% / 3);
     height: 100vh;
 }
 
-main > section:nth-child(1) {
-    background-color: rgba(0, 0, 0, .1);
+#basics-1 {
+    background-color: rgba(0, 0, 0, .7);
 }
 
-main > section:nth-child(2) {
-    background-color: rgba(0, 0, 0, .2);
+#basics-2 {
+    background-color: rgba(0, 0, 0, .8);
 }
 
-main > section:nth-child(3) {
-    background-color: rgba(0, 0, 0, .3);
+#basics-3 {
+    background-color: rgba(0, 0, 0, .9);
 }
 
-main > section:nth-child(1) > p:nth-child(1),
-main > section:nth-child(2) > p:nth-child(1),
-main > section:nth-child(3) > p:nth-child(1) {
+#basics-1 > p:nth-child(1),
+#basics-2 > p:nth-child(1),
+#basics-3 > p:nth-child(1) {
     position: absolute;
     margin: auto;
     width: fit-content;
@@ -43,9 +49,9 @@ main > section:nth-child(3) > p:nth-child(1) {
     font-size: 1.5em;
 }
 
-main > section:nth-child(1) > section:nth-child(2),
-main > section:nth-child(2) > section:nth-child(2),
-main > section:nth-child(3) > section:nth-child(2) {
+#basics-1 > section:nth-child(2),
+#basics-2 > section:nth-child(2),
+#basics-3  > section:nth-child(2) {
     width: 60%;
     height: 80%;
     position: absolute;
@@ -58,7 +64,27 @@ main > section:nth-child(3) > section:nth-child(2) {
     right: 0;
     bottom: 0;
 }
+#spa > div:nth-child(1) {
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height:100%;
+    cursor: pointer;
+}
+/*#spa > div:nth-child(2) {
+    height:30vh;
+    background-color: rgba(0,0,0,.6);
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
 
+    bottom: 0;
+    width: 100%;
+}*/
 
 .anTag{  border-radius: 5px;
     position: relative;
@@ -78,8 +104,8 @@ main > section:nth-child(2) > section:nth-child(2) > div {
     box-shadow: black;
     cursor: pointer;
 }*/
-main > section:nth-child(2) > section:nth-child(2) > a:nth-child(1),
-main > section:nth-child(2) > section:nth-child(2) > a:nth-child(2){
+#basics-2  > section:nth-child(2) > a:nth-child(1),
+#basics-2  > section:nth-child(2) > a:nth-child(2){
     background-color: rgba(0, 0, 0, 0) !important;
     cursor: default!important;
 

@@ -20,7 +20,7 @@
         }
     </style>
 </head>
-<body style="background-color: rgba(33, 37, 41,1)">
+<body id="body">
 <main class="container-fluid">
     <div class="row ">
         <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
@@ -555,6 +555,48 @@
   </div>
 </div>
 
+
+<script>
+  document.getElementById("newOrder").style.display="none";
+  document.getElementById("customer").style.display="none";
+  document.getElementById("item").style.display="none";
+
+  document.getElementById("btnHome").addEventListener("click", function () {
+    document.getElementById("newOrder").style.display="none";
+    document.getElementById("item").style.display="none";
+    document.getElementById("customer").style.display="none";
+    document.getElementById("body").style.height="100vh";
+    document.getElementById("carouselExampleIndicators").style.display="block";
+    document.getElementById("main").style.display="block";
+  });
+
+  document.getElementById("btnCustomer").addEventListener("click", function () {
+    document.getElementById("newOrder").style.display="none";
+    document.getElementById("carouselExampleIndicators").style.display="none";
+    document.getElementById("main").style.display="none";
+    document.getElementById("item").style.display="none";
+    document.getElementById("body").style.height="100vh";
+    document.getElementById("customer").style.display="block";
+
+  });
+  document.getElementById("btnItem").addEventListener("click", function () {
+    document.getElementById("newOrder").style.display="none";
+    document.getElementById("carouselExampleIndicators").style.display="none";
+    document.getElementById("main").style.display="none";
+    document.getElementById("customer").style.display="none";
+    document.getElementById("body").style.height="100vh";
+    document.getElementById("item").style.display="block";
+  });
+  document.getElementById("btnNewOrder").addEventListener("click", function () {
+    document.getElementById("carouselExampleIndicators").style.display="none";
+    document.getElementById("main").style.display="none";
+    document.getElementById("item").style.display="none";
+    document.getElementById("customer").style.display="none";
+    document.getElementById("body").style.height="100%";
+    document.getElementById("newOrder").style.display="block";
+  });
+
+</script>
 <script crossorigin="anonymous"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
         src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
@@ -564,43 +606,5 @@
 <script crossorigin="anonymous"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-<script>
-  document.getElementById("newOrder").style.display="none";
-  document.getElementById("customer").style.display="none";
-  document.getElementById("item").style.display="none";
-
-  document.getElementById("btnHome").addEventListener("click", function () {
-    document.getElementById("newOrder").style.display="none";
-    document.getElementById("carouselExampleIndicators").style.display="block";
-    document.getElementById("main").style.display="block";
-    document.getElementById("item").style.display="none";
-    document.getElementById("customer").style.display="none";
-
-  });
-
-  document.getElementById("btnCustomer").addEventListener("click", function () {
-    document.getElementById("newOrder").style.display="none";
-    document.getElementById("carouselExampleIndicators").style.display="none";
-    document.getElementById("main").style.display="none";
-    document.getElementById("item").style.display="none";
-    document.getElementById("customer").style.display="block";
-
-  });
-  document.getElementById("btnItem").addEventListener("click", function () {
-    document.getElementById("newOrder").style.display="none";
-    document.getElementById("carouselExampleIndicators").style.display="none";
-    document.getElementById("main").style.display="none";
-    document.getElementById("item").style.display="block";
-    document.getElementById("customer").style.display="none";
-  });
-  document.getElementById("btnNewOrder").addEventListener("click", function () {
-    document.getElementById("newOrder").style.display="block";
-    document.getElementById("carouselExampleIndicators").style.display="none";
-    document.getElementById("main").style.display="none";
-    document.getElementById("item").style.display="none";
-    document.getElementById("customer").style.display="none";
-  });
-
-</script>
 </body>
 </html>
