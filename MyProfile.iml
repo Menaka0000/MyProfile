@@ -5,5 +5,6 @@
     <content url="file://$MODULE_DIR$" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="bootstrap" level="application" />
+    <orderEntry type="library" name="bc871e0fef" level="application" />
   </component>
 </module>

@@ -2,9 +2,28 @@
     color: rgba(255,255,255,1);
     font-family: 'Titillium Web', sans-serif;
 }
+::-webkit-scrollbar {
+    width: 8px;
+}
 
+/* Track */
+::-webkit-scrollbar-track {
+    background: rgba(241, 241, 241,.2);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: rgba(255,255,255,.7);
+    border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar:hover {
+    width: 8px;
+}
 body{
-    background-color: rgba(33, 37, 41,.9);
+    height: 100vh !important;
+    background: linear-gradient( rgba(33, 37, 41,.9), rgba(33, 37, 41,1));
 }
 .input{
     color: rgba(0,0,0,.8);
@@ -38,19 +57,95 @@ body{
     font-weight: bold;
     color:rgba(0,0,0,1);
 }
-/*
-#btnMain{
-  position: absolute;
-  width: fit-content;
-  height: fit-content;
-  margin: auto;
-  left: 0;
-  right: 0;
-  !*bottom: 100px;*!
-}*/
+
+.dis-1{
+    height: 200px;
+    border-radius: 5px;
+    background-color: rgba(16, 16, 16,.9);
+    text-align: center;
+    font-size: 2rem;
+    padding: 10% 5%;
+    bottom: 50px;
+    background-image: linear-gradient(to right, rgba(255,0,0,0), rgba(255,255,255,.2));
+}
+
+.fa-users,.fa-laptop,.fa-desktop,.fa-hand-holding-usd{
+    font-size: 3rem;
+    color: #d1dae8;
+    /*margin-bottom: 3%;*/
+
+}
+.fix3{
+    position: relative;
+    right: 30px;
+}
+.myLabel{
+    position: relative;
+    font-size: 2em;
+    background-color: #535b63;
+    border-radius: 5px;
+    height: 100px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.myLabel > p:nth-child(1){
+    position: absolute;
+    width: fit-content;
+    height: fit-content;
+    margin: auto;
+
+    left: 0;
+    right: 0;
+
+}
 @media all and (max-width: 991px) {
     #inputSearch {
         position: relative;
         top: 0;
+    }
+    .dis-1{
+        font-size: 1.5rem;
+        margin: 5% 10%;
+        height: 150px;
+        bottom: 0;
+    }
+    body{
+        height: 100% !important;
+        background: linear-gradient( rgba(33, 37, 41,.9), rgba(33, 37, 41,1));
+    }
+    .fix3{
+        position: relative;
+        right: 0;
+    }
+    .myLabel{
+        font-size: 1.5em;
+    }
+}
+
+@media all and (max-width: 767px ) and (min-width:500px)  {
+    .dis-1{
+        font-size: 1.5rem;
+        margin-bottom:  0%;
+        height: 210px;
+        bottom: 0;
+    }
+    body{
+        height: 100% !important;
+        background: linear-gradient( rgba(33, 37, 41,.9), rgba(33, 37, 41,1));
+    }
+    .myLabel{
+        font-size: 1em;
+    }
+}
+@media all and (max-width: 411px) {
+    .dis-1{
+        font-size: 1.3rem;
+    }
+    body{
+        height: 100% !important;
+        background: linear-gradient( rgba(33, 37, 41,.9), rgba(33, 37, 41,1));
+    }
+    .myLabel{
+        font-size: 1em;
     }
 }

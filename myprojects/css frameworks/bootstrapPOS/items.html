@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>customers</title>
+    <meta content="width=device-width initial-scale=1" name="viewport">
+    <!-- CSS only -->
+    <link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+          integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" rel="stylesheet">
+    <script crossorigin="anonymous" src="https://kit.fontawesome.com/bc871e0fef.js"></script>
+    <link href="../../../assets/styles/styletest.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&family=Titillium+Web:wght@200&display=swap"
+          rel="stylesheet">
+</head>
+<body>
+<div class="container-fluid ">
+    <div class="row">
+        <nav class="navbar navbar-expand-lg bg-dark navbar-dark" >
+            <a class="navbar-brand" href="#">The POS of m.lakshan</a>
+            <button aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"
+                    class="navbar-toggler"
+                    data-target="#navbarSupportedContent" data-toggle="collapse" type="button">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Customers <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Items<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Orders<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item dropup">
+                        <div class="btn-group dropup">
+
+                            <p aria-expanded="false"
+                               aria-haspopup="true" class=" dropUp nav-item dropdown-toggle dropdown-toggle-split"
+                               data-toggle="dropdown" style="color: rgba(241, 241, 241,.6)">
+                                <span class="sr-only">Toggle Dropdown</span>Quick links
+                            </p>
+                            <div class="dropdown-menu dropUp" style="color: rgba(241, 241, 241,.6)">
+                                <!-- Dropdown menu links -->
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <form class="form-inline my-2 my-lg-0" id="form1">
+                <input aria-label="Search" class="form-control mr-sm-2 colorFix1" id="inputSearch" placeholder="Search"
+                       type="search">
+            </form>
+        </nav>
+    </div>
+
+    <div class="row ">
+        <div class="col-12 col-lg-8 ">
+            <div class="row">
+                <div class="col-1"></div>
+                <div class="col-6 "><h1 class="pt-2">All Items</h1> </div>
+                <!--                <div class="col-3"></div>-->
+            </div>
+            <div class="row">     <!--just for grid handling-->
+                <div class="col-1"></div>  <!--just for grid handling-->
+                <div class="col-10 col-lg-10">
+                    <table class="table mt-5">
+                        <thead class="thead-dark">
+                        <tr>
+                            <th scope="col">Item Id</th>
+                            <th scope="col">Name</th>
+                            <th scope="col">Description</th>
+                            <th scope="col">Qty</th>
+                            <th scope="col">Price</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <th scope="row">I001</th>
+                            <td>Laptop</td>
+                            <td>ASUS ROG SCAR 15</td>
+                            <td>3</td>
+                            <td> 425000 LKR</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">I002</th>
+                            <td>Laptop</td>
+                            <td>MSI CREATOR Z16</td>
+                            <td>4</td>
+                            <td> 550000 LKR</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">I003</th>
+                            <td>Processor</td>
+                            <td>AMD RYZEN THREADRIPPER 3990X</td>
+                            <td>Pre Order</td>
+                            <td>1000000 LKR</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="col-1"></div>    <!--just for grid handling-->
+            </div>
+        </div>
+
+        <div class="col-12 col-lg-4">
+            <div class="row pt-3">
+                <div class="col-1"></div>
+                <div class="col-10"><form>
+                    <h3 class="bg-gradient">Item details</h3>
+                    <div class="form-group ">
+                        <label class="pt-3" for="InputIId">Item Id</label>
+                        <input aria-describedby="emailHelp" class="form-control colorFix1" id="InputIId" placeholder="Enter Id"
+                               type="text">
+                    </div>
+                    <div class="form-group  pt-2">
+                        <label class="pt-3" for="ItemName">Item Name</label>
+                        <input aria-describedby="emailHelp" class="form-control colorFix1" id="ItemName"
+                               placeholder="Enter Item Name"
+                               type="text">
+
+                    </div>
+                    <div class="form-group  pt-2">
+                        <label class="pt-3" for="Description">Description</label>
+                        <input aria-describedby="emailHelp" class="form-control colorFix1" id="Description"
+                               placeholder="Enter Description"
+                               type="text">
+
+                    </div>
+                    <div class="form-group  pt-2">
+                        <label class="pt-3" for="qty">Qty</label>
+                        <input aria-describedby="emailHelp" class="form-control colorFix1" id="qty"
+                               placeholder="Enter Qty"
+                               type="text">
+
+                    </div>
+                    <div class="form-group  pt-2">
+                        <label class="pt-3" for="price">Price</label>
+                        <input aria-describedby="emailHelp" class="form-control colorFix1" id="price" placeholder="Enter Price"
+                               type="text">
+
+                    </div>
+                    <div class="pb-5 pt-2" id="btnMain">
+                        <button class="btn btn-primary" type="submit">Save or Update</button>
+                        <button class="btn btn-danger m-lg-3" type="button">Delete</button>
+                    </div>
+                </form></div>
+                <div class="col-1"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+</body>
+</html>
