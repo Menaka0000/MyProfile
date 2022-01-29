@@ -81,19 +81,17 @@ body{
 }
 .myLabel{
     position: relative;
-    font-size: 2em;
+    font-size: 1.5em;
     background-color: #535b63;
     border-radius: 5px;
-    height: 100px;
-    margin-top: 50px;
-    margin-bottom: 50px;
+    height: 60px;
+    margin-top: 10px;
 }
 .myLabel > p:nth-child(1){
     position: absolute;
     width: fit-content;
     height: fit-content;
     margin: auto;
-
     left: 0;
     right: 0;
 
