@@ -1593,6 +1593,8 @@ body > main > section:nth-child(5) > section > div:nth-child(7) > p {
         right: 0;
         top: 10px;
     }
-
+#con-text{
+    display: none;
+}
 
 }
