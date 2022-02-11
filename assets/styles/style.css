@@ -91,7 +91,7 @@ body > main > section:nth-child(1) {
     opacity: 0;
     position: relative;
     margin: auto;
-    bottom: -212px;
+    bottom: -227px;
     font-family: 'Titillium Web', sans-serif;
     color: aliceblue;
     font-size: 4em;
@@ -105,10 +105,10 @@ body > main > section:nth-child(1) {
     opacity: 0;
     position: relative;
     margin: auto;
-    bottom: -120px;
-    font-family: 'Titillium Web', sans-serif;
+    bottom: -159px;
+    font-family: 'Cinzel Decorative', cursive;;
     color: aliceblue;
-    font-size: 4em;
+    font-size: 2.8em;
     animation-name: glitch;
     animation-duration: .5s;
     animation-delay: 2.3s;
@@ -329,9 +329,9 @@ body > main > section:nth-child(1) > section:nth-child(3) > div:nth-child(4) {
     height: fit-content;
     left: 0;
     bottom: 0;
-    font-family: 'Titillium Web', sans-serif;
+    font-family: 'Cinzel Decorative', cursive;
     color: aliceblue;
-    font-size: 4em;
+    font-size: 2.8em;
     /*animation:  anim1_0 .5s 1 forwards, anim1_0_1 .5s forwards;*/
     -webkit-animation-name: anim1_0, anim1_0_1;
     -webkit-animation-duration: .5s, .5s;
@@ -649,11 +649,12 @@ body > main > section:nth-child(2) > section:nth-child(2) > div:nth-child(2) {
     border-radius: 10px;
     width: 200px;
     height: 75px;
+
 }
 
 body > main > section:nth-child(2) > section:nth-child(2) > div:nth-child(3) {
     position: relative;
-    top: 75px;
+    top: 90px;
     left: 50px;
     width: 300px;
     height: 200px;
@@ -663,12 +664,13 @@ body > main > section:nth-child(2) > section:nth-child(2) > div:nth-child(3) {
 
 body > main > section:nth-child(2) > section:nth-child(2) > div:nth-child(4) {
     position: relative;
-    top: 25px;
+    top: 50px;
     left: 350px;
-    width: 300px;
-    height: 200px;
+    width: 250px;
+    height: 150px;
     background-image: url("../images/arrow1.png");
     background-size: contain;
+    background-repeat: no-repeat;
 }
 
 body > main > section:nth-child(2) > section:nth-child(2) > button:nth-child(5) {
@@ -701,7 +703,7 @@ body > main > section:nth-child(2) > section:nth-child(2) > p:nth-child(7) {
     margin: auto;
     width: fit-content;
     height: fit-content;
-    top: 200px;
+    top: 210px;
     left: 125px;
     font-size: 1em;
     font-weight: bold;
@@ -711,13 +713,14 @@ body > main > section:nth-child(2) > section:nth-child(2) > p:nth-child(7) {
 }
 
 .separator {
+    z-index: 1;
     position: absolute;
     width: 300px;
     height: 32px;
     left: 110px;
     top: 40px;
-    background-image: url("../images/headings.png");
-    background-size: 75%;
+    background-image: url("../images/seperator.png");
+    background-size:75%;
     background-repeat: no-repeat;
     /* position: absolute;
      background-image: linear-gradient(rgba(8, 26, 51,.1),rgba(0,0,0,.1),rgba(8, 26, 51,.1));*/
@@ -1198,7 +1201,8 @@ body > main > section:nth-child(5) > section > div:nth-child(7) > p {
     right: 0;
     top: 10px;
 }
-#con-text{
+
+#con-text {
     position: absolute;
     margin: auto;
     width: fit-content;
@@ -1209,6 +1213,7 @@ body > main > section:nth-child(5) > section > div:nth-child(7) > p {
     left: 150px;
     top: -20px;
 }
+
 /*RESPONSIVE MEDIA QUERIES*/
 @media all and (max-width: 1600px)/*and (min-width: 1024px)*/ {
     body > main > section:nth-child(1) > div:nth-child(2) > div:nth-child(1) {
@@ -1247,6 +1252,9 @@ body > main > section:nth-child(5) > section > div:nth-child(7) > p {
 
     #skill-text {
         bottom: -160px;
+    }
+    body > main > section:nth-child(1) > section:nth-child(3){
+        width: 73%;
     }
 
 }
@@ -1362,7 +1370,7 @@ body > main > section:nth-child(5) > section > div:nth-child(7) > p {
         width: 150px;
         height: 32px;
         left: 2px;
-        background-image: url("../images/headings.png");
+        background-image: url("../images/seperator.png");
         background-size: 100%;
         background-repeat: no-repeat;
     }
@@ -1445,7 +1453,7 @@ body > main > section:nth-child(5) > section > div:nth-child(7) > p {
         position: absolute;
         height: 80%;
         width: 100%;
-    / / margin: auto;
+        margin: auto;
         top: 0;
         bottom: 0;
         left: 0;
@@ -1593,8 +1601,9 @@ body > main > section:nth-child(5) > section > div:nth-child(7) > p {
         right: 0;
         top: 10px;
     }
-#con-text{
-    display: none;
-}
+
+    #con-text {
+        display: none;
+    }
 
 }
