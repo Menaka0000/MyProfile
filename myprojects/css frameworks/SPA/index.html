@@ -37,7 +37,7 @@
                         <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item active" id="btnCustomer">
-                        <a class="nav-link" href="#" >Customers <span class="sr-only" >(current)</span></a>
+                        <a class="nav-link" href="#">Customers <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item active" id="btnItem">
                         <a class="nav-link" href="#">Items<span class="sr-only">(current)</span></a>
@@ -110,513 +110,461 @@
 </section>
 
 
-
-
 <!--customer html-->
 <div class="container-fluid " id="customer">
 
-  <div class="row ">
-    <div class="col-12 col-lg-8 ">
-      <div class="row">
-        <div class="col-1"></div>
-        <div class="col-6 "><h1 class="pt-2">All customers</h1> </div>
-        <!--                <div class="col-3"></div>-->
-      </div>
-      <div class="row">     <!--just for grid handling-->
-        <div class="col-1"></div>  <!--just for grid handling-->
-        <div class="col-10 col-lg-10">
-          <table class="table mt-5">
-            <thead class="thead-dark">
-            <tr>
-              <th scope="col">#</th>
-              <th scope="col">First</th>
-              <th scope="col">Last</th>
-              <th scope="col">Handle</th>
-            </tr>
-            </thead>
-            <tbody>
-            <tr>
-              <th scope="row">1</th>
-              <td>Mark</td>
-              <td>Otto</td>
-              <td>@mdo</td>
-            </tr>
-            <tr>
-              <th scope="row">2</th>
-              <td>Jacob</td>
-              <td>Thornton</td>
-              <td>@fat</td>
-            </tr>
-            <tr>
-              <th scope="row">3</th>
-              <td>Larry</td>
-              <td>the Bird</td>
-              <td>@twitter</td>
-            </tr>
-            </tbody>
-          </table>
+    <div class="row ">
+        <div class="col-12 col-lg-8 ">
+            <div class="row">
+                <div class="col-1"></div>
+                <div class="col-6 "><h1 class="pt-2">All customers</h1></div>
+                <!--                <div class="col-3"></div>-->
+            </div>
+            <div class="row">     <!--just for grid handling-->
+                <div class="col-1"></div>  <!--just for grid handling-->
+                <div class="col-10 col-lg-10">
+                    <table class="table mt-5" id="tblCustomer">
+                        <thead class="thead-dark">
+                        <tr>
+                            <th scope="col">Id</th>
+                            <th scope="col">First Name</th>
+                            <th scope="col">Last Name</th>
+                            <th scope="col">Address</th>
+                            <th scope="col">Salary</th>
+                        </tr>
+                        </thead>
+                        <tbody id="cusTBody">
+
+                        </tbody>
+                    </table>
+                </div>
+                <div class="col-1"></div>    <!--just for grid handling-->
+            </div>
+
+
         </div>
-        <div class="col-1"></div>    <!--just for grid handling-->
-      </div>
 
-
+        <div class="col-12 col-lg-4">
+            <div class="row pt-3">
+                <div class="col-1"></div>
+                <div class="col-10">
+                    <form>
+                        <h3 class="bg-gradient">Customer details</h3>
+                        <div class="form-group ">
+                            <label class="pt-3" for="txtId">Customer Id (eg : C00-001)</label>
+                            <input aria-describedby="emailHelp" class="form-control colorFix1" id="txtId"
+                                   placeholder="Enter Id"
+                                   type="text">
+                            <i class="far fa-times-circle" id="cusIdCro"></i>
+                            <i class="far fa-check-circle" id="cusIdChe"></i>
+                        </div>
+                        <div class="form-group  pt-2 ">
+                            <label class="pt-3" for="txtFName">First Name</label>
+                            <input aria-describedby="emailHelp" class="form-control colorFix1" id="txtFName"
+                                   placeholder="Enter First Name"
+                                   type="text">
+                            <i class="far fa-times-circle" id="cusFirstNameCro"></i>
+                            <i class="far fa-check-circle" id="cusFirstNameChe"></i>
+                        </div>
+                        <div class="form-group  pt-2">
+                            <label class="pt-3" for="txtLName">Last Name</label>
+                            <input aria-describedby="emailHelp" class="form-control colorFix1" id="txtLName"
+                                   placeholder="Enter Last Name"
+                                   type="text">
+                            <i class="far fa-times-circle" id="cusLastNameCro"></i>
+                            <i class="far fa-check-circle" id="cusLastNameChe"></i>
+                        </div>
+                        <div class="form-group  pt-2">
+                            <label class="pt-3" for="txtAddress">Address</label>
+                            <input aria-describedby="emailHelp" class="form-control colorFix1" id="txtAddress"
+                                   placeholder="Enter Address"
+                                   type="text">
+                            <i class="far fa-times-circle" id="cusAddressCro"></i>
+                            <i class="far fa-check-circle" id="cusAddressChe"></i>
+                        </div>
+                        <div class="form-group  pt-2">
+                            <label class="pt-3" for="txtSalary">salary</label>
+                            <input aria-describedby="emailHelp" class="form-control colorFix1" id="txtSalary"
+                                   placeholder="Enter Salary"
+                                   type="text">
+                            <i class="far fa-times-circle" id="cusSalaryCro"></i>
+                            <i class="far fa-check-circle" id="cusSalaryChe"></i>
+                        </div>
+                        <div class="pb-5 pt-2" id="btnMain2">
+                            <button class="btn btn-primary" id="btnCusSave" type="button">Save or Update</button>
+                            <button class="btn btn-primary" id="btnCusSearch" type="button">Search</button>
+                            <button class="btn btn-danger m-lg-3"  id="btnCusDelete" type="button">Delete</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-1"></div>
+            </div>
+        </div>
     </div>
-
-    <div class="col-12 col-lg-4">
-      <div class="row pt-3">
-        <div class="col-1"></div>
-        <div class="col-10"><form>
-          <h3 class="bg-gradient">Customer details</h3>
-          <div class="form-group ">
-            <label class="pt-3" for="InputCId">Customer Id</label>
-            <input aria-describedby="emailHelp" class="form-control colorFix1" id="InputCId" placeholder="Enter Id"
-                   type="text">
-          </div>
-          <div class="form-group  pt-2">
-            <label class="pt-3" for="InputFName">First Name</label>
-            <input aria-describedby="emailHelp" class="form-control colorFix1" id="InputFName"
-                   placeholder="Enter First Name"
-                   type="text">
-
-          </div>
-          <div class="form-group  pt-2">
-            <label class="pt-3" for="InputLName">Last Name</label>
-            <input aria-describedby="emailHelp" class="form-control colorFix1" id="InputLName"
-                   placeholder="Enter Last Name"
-                   type="text">
-
-          </div>
-          <div class="form-group  pt-2">
-            <label class="pt-3" for="InputAddress">Address</label>
-            <input aria-describedby="emailHelp" class="form-control colorFix1" id="InputAddress"
-                   placeholder="Enter Address"
-                   type="text">
-
-          </div>
-          <div class="form-group  pt-2">
-            <label class="pt-3" for="InputSalary">salary</label>
-            <input aria-describedby="emailHelp" class="form-control colorFix1" id="InputSalary" placeholder="Enter Salary"
-                   type="text">
-
-          </div>
-          <div class="form-group pt-2">
-            <label class="pt-3" for="exampleInputEmail1">Email address</label>
-            <input aria-describedby="emailHelp" class="form-control colorFix1" id="exampleInputEmail1"
-                   placeholder="Enter email"
-                   type="email">
-            <small class="form-text text-muted" id="emailHelp">We'll never share your email with anyone
-              else.</small>
-          </div>
-          <div class="form-check">
-            <input class="form-check-input" id="Check1" type="checkbox">
-            <label class="form-check-label" for="Check1">Agree with all the terms</label>
-          </div>
-          <div class="pb-5 pt-2" id="btnMain2">
-            <button class="btn btn-primary" type="submit">Save or Update</button>
-            <button class="btn btn-danger m-lg-3" type="button">Delete</button>
-          </div>
-        </form></div>
-        <div class="col-1"></div>
-      </div>
-    </div>
-  </div>
 </div>
 
 <!--Item html-->
 <div class="container-fluid " id="item">
 
-  <div class="row ">
-    <div class="col-12 col-lg-8 ">
-      <div class="row">
-        <div class="col-1"></div>
-        <div class="col-6 "><h1 class="pt-2">All Items</h1> </div>
-        <!--                <div class="col-3"></div>-->
-      </div>
-      <div class="row">     <!--just for grid handling-->
-        <div class="col-1"></div>  <!--just for grid handling-->
-        <div class="col-10 col-lg-10">
-          <table class="table mt-5">
-            <thead class="thead-dark">
-            <tr>
-              <th scope="col">Item Id</th>
-              <th scope="col">Name</th>
-              <th scope="col">Description</th>
-              <th scope="col">Qty</th>
-              <th scope="col">Price</th>
-            </tr>
-            </thead>
-            <tbody>
-            <tr>
-              <th scope="row">I001</th>
-              <td>Laptop</td>
-              <td>ASUS ROG SCAR 15</td>
-              <td>3</td>
-              <td> 425000 LKR</td>
-            </tr>
-            <tr>
-              <th scope="row">I002</th>
-              <td>Laptop</td>
-              <td>MSI CREATOR Z16</td>
-              <td>4</td>
-              <td> 550000 LKR</td>
-            </tr>
-            <tr>
-              <th scope="row">I003</th>
-              <td>Processor</td>
-              <td>AMD RYZEN THREADRIPPER 3990X</td>
-              <td>Pre Order</td>
-              <td>1000000 LKR</td>
-            </tr>
-            </tbody>
-          </table>
+    <div class="row ">
+        <div class="col-12 col-lg-8 ">
+            <div class="row">
+                <div class="col-1"></div>
+                <div class="col-6 "><h1 class="pt-2">All Items</h1></div>
+                <!--                <div class="col-3"></div>-->
+            </div>
+            <div class="row">     <!--just for grid handling-->
+                <div class="col-1"></div>  <!--just for grid handling-->
+                <div class="col-10 col-lg-10">
+                    <table class="table mt-5">
+                        <thead class="thead-dark">
+                        <tr>
+                            <th scope="col">Item Id</th>
+                            <th scope="col">Name</th>
+                            <th scope="col">Description</th>
+                            <th scope="col">Qty</th>
+                            <th scope="col">Price</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <th scope="row">I001</th>
+                            <td>Laptop</td>
+                            <td>ASUS ROG SCAR 15</td>
+                            <td>3</td>
+                            <td> 425000 LKR</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">I002</th>
+                            <td>Laptop</td>
+                            <td>MSI CREATOR Z16</td>
+                            <td>4</td>
+                            <td> 550000 LKR</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">I003</th>
+                            <td>Processor</td>
+                            <td>AMD RYZEN THREADRIPPER 3990X</td>
+                            <td>Pre Order</td>
+                            <td>1000000 LKR</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="col-1"></div>    <!--just for grid handling-->
+            </div>
         </div>
-        <div class="col-1"></div>    <!--just for grid handling-->
-      </div>
+
+        <div class="col-12 col-lg-4">
+            <div class="row pt-3">
+                <div class="col-1"></div>
+                <div class="col-10">
+                    <form>
+                        <h3 class="bg-gradient">Item details</h3>
+                        <div class="form-group ">
+                            <label class="pt-3" for="InputIId">Item Id</label>
+                            <input aria-describedby="emailHelp" class="form-control colorFix1" id="InputIId"
+                                   placeholder="Enter Id"
+                                   type="text">
+                        </div>
+                        <div class="form-group  pt-2">
+                            <label class="pt-3" for="ItemName">Item Name</label>
+                            <input aria-describedby="emailHelp" class="form-control colorFix1" id="ItemName"
+                                   placeholder="Enter Item Name"
+                                   type="text">
+
+                        </div>
+                        <div class="form-group  pt-2">
+                            <label class="pt-3" for="Description">Description</label>
+                            <input aria-describedby="emailHelp" class="form-control colorFix1" id="Description"
+                                   placeholder="Enter Description"
+                                   type="text">
+
+                        </div>
+                        <div class="form-group  pt-2">
+                            <label class="pt-3" for="qty">Qty</label>
+                            <input aria-describedby="emailHelp" class="form-control colorFix1" id="qty"
+                                   placeholder="Enter Qty"
+                                   type="text">
+
+                        </div>
+                        <div class="form-group  pt-2">
+                            <label class="pt-3" for="price">Price</label>
+                            <input aria-describedby="emailHelp" class="form-control colorFix1" id="price"
+                                   placeholder="Enter Price"
+                                   type="text">
+
+                        </div>
+                        <div class="pb-5 pt-2" id="btnMain1">
+                            <button class="btn btn-primary" type="button">Save or Update</button>
+                            <button class="btn btn-danger m-lg-3" type="button">Delete</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-1"></div>
+            </div>
+        </div>
     </div>
-
-    <div class="col-12 col-lg-4">
-      <div class="row pt-3">
-        <div class="col-1"></div>
-        <div class="col-10"><form>
-          <h3 class="bg-gradient">Item details</h3>
-          <div class="form-group ">
-            <label class="pt-3" for="InputIId">Item Id</label>
-            <input aria-describedby="emailHelp" class="form-control colorFix1" id="InputIId" placeholder="Enter Id"
-                   type="text">
-          </div>
-          <div class="form-group  pt-2">
-            <label class="pt-3" for="ItemName">Item Name</label>
-            <input aria-describedby="emailHelp" class="form-control colorFix1" id="ItemName"
-                   placeholder="Enter Item Name"
-                   type="text">
-
-          </div>
-          <div class="form-group  pt-2">
-            <label class="pt-3" for="Description">Description</label>
-            <input aria-describedby="emailHelp" class="form-control colorFix1" id="Description"
-                   placeholder="Enter Description"
-                   type="text">
-
-          </div>
-          <div class="form-group  pt-2">
-            <label class="pt-3" for="qty">Qty</label>
-            <input aria-describedby="emailHelp" class="form-control colorFix1" id="qty"
-                   placeholder="Enter Qty"
-                   type="text">
-
-          </div>
-          <div class="form-group  pt-2">
-            <label class="pt-3" for="price">Price</label>
-            <input aria-describedby="emailHelp" class="form-control colorFix1" id="price" placeholder="Enter Price"
-                   type="text">
-
-          </div>
-          <div class="pb-5 pt-2" id="btnMain1">
-            <button class="btn btn-primary" type="submit">Save or Update</button>
-            <button class="btn btn-danger m-lg-3" type="button">Delete</button>
-          </div>
-        </form></div>
-        <div class="col-1"></div>
-      </div>
-    </div>
-  </div>
 </div>
 
 <!--New order-->
-<div id="newOrder" class="container-fluid">
-  <div class="row">
-    <div class="col-1"></div>
-    <h1 class="pt-2  h1 pl-2 col-2">New Order</h1>
-  </div>
-
-  <div class="row">
-    <div class="col-12 col-lg-6">
-      <div class="row">
-        <div class="col-2"></div>
-        <div class="col-3"><h3 class="bg-gradient">Customer details</h3></div>
-        <div class="col-1">
-          <div class="dropdown">
-            <button aria-expanded="false" aria-haspopup="true"
-                    class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" id="dropdownMenuButton"
-                    type="button">
-              Customer Id
-            </button>
-            <div aria-labelledby="dropdownMenuButton" class="dropdown-menu">
-              <a class="dropdown-item" href="#">Action</a>
-              <a class="dropdown-item" href="#">Another action</a>
-              <a class="dropdown-item" href="#">Something else here</a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="row">     <!--just for grid handling-->
-        <div class="col-2"></div>  <!--just for grid handling-->
-        <div class="col-8">
-          <div class="row">
-            <div class="col-4">
-              <form>
-                <div class="form-group form-control-sm">
-                  <label class="" for="InputCId1">Customer Id</label>
-                  <input aria-describedby="emailHelp" class="form-control colorFix1" id="InputCId1"
-                         placeholder="Enter Id"
-                         type="text">
-                </div>
-                <div class="form-group  form-control-sm">
-                  <label class="" for="InputFName1">First Name</label>
-                  <input aria-describedby="emailHelp" class="form-control colorFix1" id="InputFName1"
-                         placeholder="Enter First Name"
-                         type="text">
-
-                </div>
-                <div class="form-group form-control-sm ">
-                  <label class="" for="InputLName1">Last Name</label>
-                  <input aria-describedby="emailHelp" class="form-control colorFix1" id="InputLName1"
-                         placeholder="Enter Last Name"
-                         type="text">
-
-                </div>
-              </form>
-            </div>
-            <div class="col-3"></div>
-            <div class="col-4">
-              <form>
-                <div class="form-group form-control-sm ">
-                  <label class="" for="InputAddress1">Address</label>
-                  <input aria-describedby="emailHelp" class="form-control colorFix1" id="InputAddress1"
-                         placeholder="Enter Address"
-                         type="text">
-
-                </div>
-                <div class="form-group  form-control-sm">
-                  <label class="" for="InputSalary1">salary</label>
-                  <input aria-describedby="emailHelp" class="form-control colorFix1" id="InputSalary1"
-                         placeholder="Enter Salary"
-                         type="text">
-
-                </div>
-              </form>
-            </div>
-          </div>
-
-
-        </div>
-        <div class="col-1"></div>    <!--just for grid handling-->
-      </div>
-    </div>
-
-    <div class="col-12 col-lg-6">
-      <div class="row">
-        <div class="col-2"></div>
-        <div class="col-3"><h3 class="bg-gradient">Item details</h3></div>
-        <div class="col-1">
-          <div class="dropdown">
-            <button aria-expanded="false" aria-haspopup="true" class="btn btn-secondary dropdown-toggle"
-                    data-toggle="dropdown" id="dropdownMenuButton1" type="button">
-              Item Id
-            </button>
-            <div aria-labelledby="dropdownMenuButton1" class="dropdown-menu">
-              <a class="dropdown-item" href="#">Action</a>
-              <a class="dropdown-item" href="#">Another action</a>
-              <a class="dropdown-item" href="#">Something else here</a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="row">     <!--just for grid handling-->
-        <div class="col-2"></div>  <!--just for grid handling-->
-        <div class="col-8">
-          <div class="row">
-            <div class="col-4">
-              <form>
-                <div class="form-group form-control-sm">
-                  <label for="InputIId1">Item Id</label>
-                  <input aria-describedby="emailHelp" class="form-control colorFix1" id="InputIId1"
-                         placeholder="Enter Id"
-                         type="text">
-                </div>
-                <div class="form-group  form-control-sm">
-                  <label for="ItemName1">Item Name</label>
-                  <input aria-describedby="emailHelp" class="form-control colorFix1" id="ItemName1"
-                         placeholder="Enter Item Name"
-                         type="text">
-                </div>
-                <div class="form-group  form-control-sm">
-                  <label for="Description1">Description</label>
-                  <input aria-describedby="emailHelp" class="form-control colorFix1" id="Description1"
-                         placeholder="Enter Description"
-                         type="text">
-                </div>
-              </form>
-            </div>
-            <div class="col-3"></div>
-            <div class="col-4">
-              <form>
-                <div class="form-group  form-control-sm">
-                  <label for="qty1">Qty On Stock</label>
-                  <input aria-describedby="emailHelp" class="form-control colorFix1" id="qty1"
-                         placeholder="Enter Qty"
-                         type="text">
-
-                </div>
-                <div class="form-group  form-control-sm">
-                  <label for="price1">Price</label>
-                  <input aria-describedby="emailHelp" class="form-control colorFix1" id="price1"
-                         placeholder="Enter Price"
-                         type="text">
-
-                </div>
-                <div class="pb-5 pt-2" id="btnMain">
-                  <button class="btn btn-primary" type="submit">Add to cart</button>
-                  <button class="btn btn-danger " type="button">Clear</button>
-                </div>
-              </form>
-            </div>
-          </div>
-        </div>
-        <div class="col-1"></div>    <!--just for grid handling-->
-      </div>
+<div class="container-fluid" id="newOrder">
+    <div class="row">
+        <div class="col-1"></div>
+        <h1 class="pt-2  h1 pl-2 col-2">New Order</h1>
     </div>
 
     <div class="row">
-      <div class="col-1"></div>
-      <div class="col-10 col-lg-10">
-        <h3 class="bg-gradient">Cart</h3>
-        <table class="table">
-          <thead class="thead-dark">
-          <tr>
-            <th scope="col">Item Id</th>
-            <th scope="col">Name</th>
-            <th scope="col">Description</th>
-            <th scope="col">Qty for sale</th>
-            <th scope="col"> Unit Price</th>
-            <th scope="col"> Discount</th>
-            <th scope="col"> Total</th>
-          </tr>
-          </thead>
-          <tbody>
-          <tr>
-            <th scope="row">I001</th>
-            <td>Laptop</td>
-            <td>ASUS ROG SCAR 15</td>
-            <td>1</td>
-            <td> 425000 LKR</td>
-            <td> 0 LKR</td>
-            <td> 425000 LKR</td>
-          </tr>
-          <tr>
-            <th scope="row">I002</th>
-            <td>Laptop</td>
-            <td>MSI CREATOR Z16</td>
-            <td>1</td>
-            <td> 550000 LKR</td>
-            <td> 0 LKR</td>
-            <td> 550000 LKR</td>
-          </tr>
-          </tbody>
-        </table>
-      </div>
-      <div class="col-1"></div>
-    </div>
-
-    <div class="row mt-3">
-      <div class="col-1 "></div>
-      <div class="col-10 col-lg-10">
-        <h3 class="bg-gradient">Summary</h3>
-        <div class="row">
-          <div class="col-3">
-            <div class="form-group ">
-              <label class="" for="orderId">Order Id</label>
-              <input aria-describedby="emailHelp" class="form-control colorFix1" id="orderId"
-                     placeholder=""
-                     type="text">
-            </div>
-            <div class="form-group  ">
-              <label for="date">Date</label>
-              <input aria-describedby="emailHelp" class="form-control colorFix1" id="date"
-                     placeholder=""
-                     type="date">
-            </div>
-          </div>
-          <div class="col-1"></div>
-          <div class="col-3">
-            <form action="">
-              <div class="form-group  ">
-                <label for="time">Time</label>
-                <input aria-describedby="emailHelp" class="form-control colorFix1" id="time"
-                       placeholder="Enter Description"
-                       type="time">
-              </div>
-
-              <div class="form-group">
-                <label for="cusName">Customer</label>
-                <input aria-describedby="emailHelp" class="form-control colorFix1" id="cusName"
-                       placeholder=""
-                       type="text">
-              </div>
-              <div class="mt-3">
-                <button class="btn btn-primary" type="submit">Place Order</button>
-                <button class="btn btn-danger" type="button">Cancel</button>
-              </div>
-            </form>
-          </div>
-          <div class="col-1"></div>
-          <div class="col-4">
+        <div class="col-12 col-lg-6">
             <div class="row">
-              <div class="col-1"></div>
-              <div class="col-4">
-                <div class="myLabel"><p>Discount</p></div>
-                <div class="myLabel"><p>Total</p></div>
-
-              </div>
-              <div class="col-3"></div>
+                <div class="col-2"></div>
+                <div class="col-3"><h3 class="bg-gradient">Customer details</h3></div>
+                <div class="col-1">
+                    <div class="dropdown">
+                        <button aria-expanded="false" aria-haspopup="true"
+                                class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" id="dropdownMenuButton"
+                                type="button">
+                            Customer Id
+                        </button>
+                        <div aria-labelledby="dropdownMenuButton" class="dropdown-menu">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
+            <div class="row">     <!--just for grid handling-->
+                <div class="col-2"></div>  <!--just for grid handling-->
+                <div class="col-8">
+                    <div class="row">
+                        <div class="col-5">
+                            <form>
+                                <div class="form-group form-control-sm">
+                                    <label class="" for="InputCId1">Customer Id</label>
+                                    <input aria-describedby="emailHelp" class="form-control colorFix1" id="InputCId1"
+                                           placeholder="Enter Id"
+                                           type="text">
+                                </div>
+                                <div class="form-group  form-control-sm">
+                                    <label class="" for="InputFName1">First Name</label>
+                                    <input aria-describedby="emailHelp" class="form-control colorFix1" id="InputFName1"
+                                           placeholder="Enter First Name"
+                                           type="text">
+
+                                </div>
+                                <div class="form-group form-control-sm ">
+                                    <label class="" for="InputLName1">Last Name</label>
+                                    <input aria-describedby="emailHelp" class="form-control colorFix1" id="InputLName1"
+                                           placeholder="Enter Last Name"
+                                           type="text">
+
+                                </div>
+                            </form>
+                        </div>
+                        <div class="col-1"></div>
+                        <div class="col-5">
+                            <form>
+                                <div class="form-group form-control-sm ">
+                                    <label class="" for="InputAddress1">Address</label>
+                                    <input aria-describedby="emailHelp" class="form-control colorFix1"
+                                           id="InputAddress1"
+                                           placeholder="Enter Address"
+                                           type="text">
+
+                                </div>
+                                <div class="form-group  form-control-sm">
+                                    <label class="" for="InputSalary1">salary</label>
+                                    <input aria-describedby="emailHelp" class="form-control colorFix1" id="InputSalary1"
+                                           placeholder="Enter Salary"
+                                           type="text">
+
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="col-1"></div>    <!--just for grid handling-->
+            </div>
         </div>
-      </div>
+
+        <div class="col-12 col-lg-6">
+            <div class="row">
+                <div class="col-2"></div>
+                <div class="col-3"><h3 class="bg-gradient">Item details</h3></div>
+                <div class="col-1">
+                    <div class="dropdown">
+                        <button aria-expanded="false" aria-haspopup="true" class="btn btn-secondary dropdown-toggle"
+                                data-toggle="dropdown" id="dropdownMenuButton1" type="button">
+                            Item Id
+                        </button>
+                        <div aria-labelledby="dropdownMenuButton1" class="dropdown-menu">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">     <!--just for grid handling-->
+                <div class="col-2"></div>  <!--just for grid handling-->
+                <div class="col-8">
+                    <div class="row">
+                        <div class="col-4">
+                            <form>
+                                <div class="form-group form-control-sm">
+                                    <label for="InputIId1">Item Id</label>
+                                    <input aria-describedby="emailHelp" class="form-control colorFix1" id="InputIId1"
+                                           placeholder="Enter Id"
+                                           type="text">
+                                </div>
+                                <div class="form-group  form-control-sm">
+                                    <label for="ItemName1">Item Name</label>
+                                    <input aria-describedby="emailHelp" class="form-control colorFix1" id="ItemName1"
+                                           placeholder="Enter Item Name"
+                                           type="text">
+                                </div>
+                                <div class="form-group  form-control-sm">
+                                    <label for="Description1">Description</label>
+                                    <input aria-describedby="emailHelp" class="form-control colorFix1" id="Description1"
+                                           placeholder="Enter Description"
+                                           type="text">
+                                </div>
+                            </form>
+                        </div>
+                        <div class="col-3"></div>
+                        <div class="col-4">
+                            <form>
+                                <div class="form-group  form-control-sm">
+                                    <label for="qty1">Qty in Stock</label>
+                                    <input aria-describedby="emailHelp" class="form-control colorFix1" id="qty1"
+                                           placeholder="Enter Qty"
+                                           type="text">
+
+                                </div>
+                                <div class="form-group  form-control-sm">
+                                    <label for="price1">Price</label>
+                                    <input aria-describedby="emailHelp" class="form-control colorFix1" id="price1"
+                                           placeholder="Enter Price"
+                                           type="text">
+
+                                </div>
+                                <div class="pb-5 pt-2" id="btnMain">
+                                    <button class="btn btn-primary" type="button">Add to cart</button>
+                                    <button class="btn btn-danger " type="button">Clear</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-1"></div>    <!--just for grid handling-->
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-1"></div>
+            <div class="col-10 col-lg-10">
+                <h3 class="bg-gradient">Cart</h3>
+                <table class="table">
+                    <thead class="thead-dark">
+                    <tr>
+                        <th scope="col">Item Id</th>
+                        <th scope="col">Name</th>
+                        <th scope="col">Description</th>
+                        <th scope="col">Qty for sale</th>
+                        <th scope="col"> Unit Price</th>
+                        <th scope="col"> Discount</th>
+                        <th scope="col"> Total</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <th scope="row">I001</th>
+                        <td>Laptop</td>
+                        <td>ASUS ROG SCAR 15</td>
+                        <td>1</td>
+                        <td> 425000 LKR</td>
+                        <td> 0 LKR</td>
+                        <td> 425000 LKR</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">I002</th>
+                        <td>Laptop</td>
+                        <td>MSI CREATOR Z16</td>
+                        <td>1</td>
+                        <td> 550000 LKR</td>
+                        <td> 0 LKR</td>
+                        <td> 550000 LKR</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="col-1"></div>
+        </div>
+
+        <div class="row mt-3">
+            <div class="col-1 "></div>
+            <div class="col-10 col-lg-10">
+                <h3 class="bg-gradient">Summary</h3>
+                <div class="row">
+                    <div class="col-3">
+                        <div class="form-group ">
+                            <label class="" for="orderId">Order Id</label>
+                            <input aria-describedby="emailHelp" class="form-control colorFix1" id="orderId"
+                                   placeholder=""
+                                   type="text">
+                        </div>
+                        <div class="form-group  ">
+                            <label for="date">Date</label>
+                            <input aria-describedby="emailHelp" class="form-control colorFix1" id="date"
+                                   placeholder=""
+                                   type="date">
+                        </div>
+                    </div>
+                    <div class="col-1"></div>
+                    <div class="col-3">
+                        <form action="">
+                            <div class="form-group  ">
+                                <label for="time">Time</label>
+                                <input aria-describedby="emailHelp" class="form-control colorFix1" id="time"
+                                       placeholder="Enter Description"
+                                       type="time">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="cusName">Customer</label>
+                                <input aria-describedby="emailHelp" class="form-control colorFix1" id="cusName"
+                                       placeholder=""
+                                       type="text">
+                            </div>
+                            <div class="mt-3">
+                                <button class="btn btn-primary" type="button">Place Order</button>
+                                <button class="btn btn-danger" type="button">Cancel</button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-1"></div>
+                    <div class="col-4">
+                        <div class="row">
+                            <div class="col-1"></div>
+                            <div class="col-4">
+                                <div class="myLabel"><p>Discount</p></div>
+                                <div class="myLabel"><p>Total</p></div>
+
+                            </div>
+                            <div class="col-3"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-1"></div>
     </div>
-    <div class="col-1"></div>
-  </div>
 </div>
 
 
-
-<script>
-  document.getElementById("newOrder").style.display="none";
-  document.getElementById("customer").style.display="none";
-  document.getElementById("item").style.display="none";
-
-  document.getElementById("btnHome").addEventListener("click", function () {
-    document.getElementById("newOrder").style.display="none";
-    document.getElementById("item").style.display="none";
-    document.getElementById("customer").style.display="none";
-    document.getElementById("carouselExampleIndicators").style.display="block";
-    document.getElementById("main").style.display="block";
-  });
-
-  document.getElementById("btnCustomer").addEventListener("click", function () {
-    document.getElementById("newOrder").style.display="none";
-    document.getElementById("carouselExampleIndicators").style.display="none";
-    document.getElementById("main").style.display="none";
-    document.getElementById("item").style.display="none";
-    document.getElementById("customer").style.display="block";
-
-  });
-  document.getElementById("btnItem").addEventListener("click", function () {
-    document.getElementById("newOrder").style.display="none";
-    document.getElementById("carouselExampleIndicators").style.display="none";
-    document.getElementById("main").style.display="none";
-    document.getElementById("customer").style.display="none";
-    document.getElementById("item").style.display="block";
-  });
-  document.getElementById("btnNewOrder").addEventListener("click", function () {
-    document.getElementById("carouselExampleIndicators").style.display="none";
-    document.getElementById("main").style.display="none";
-    document.getElementById("item").style.display="none";
-    document.getElementById("customer").style.display="none";
-    document.getElementById("newOrder").style.display="block";
-  });
-
-</script>
 <script crossorigin="anonymous"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
         src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
@@ -626,5 +574,53 @@
 <script crossorigin="anonymous"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+<script>
+
+    document.getElementById("newOrder").style.display = "none";
+    document.getElementById("customer").style.display = "none";
+    document.getElementById("item").style.display = "none";
+
+    document.getElementById("btnHome").addEventListener("click", function () {
+        document.getElementById("newOrder").style.display = "none";
+        document.getElementById("item").style.display = "none";
+        document.getElementById("customer").style.display = "none";
+        document.getElementById("carouselExampleIndicators").style.display = "block";
+        document.getElementById("main").style.display = "block";
+    });
+
+    document.getElementById("btnCustomer").addEventListener("click", function () {
+        document.getElementById("newOrder").style.display = "none";
+        document.getElementById("carouselExampleIndicators").style.display = "none";
+        document.getElementById("main").style.display = "none";
+        document.getElementById("item").style.display = "none";
+        document.getElementById("customer").style.display = "block";
+
+    });
+
+    document.getElementById("btnItem").addEventListener("click", function () {
+        document.getElementById("newOrder").style.display = "none";
+        document.getElementById("carouselExampleIndicators").style.display = "none";
+        document.getElementById("main").style.display = "none";
+        document.getElementById("customer").style.display = "none";
+        document.getElementById("item").style.display = "block";
+    });
+
+    document.getElementById("btnNewOrder").addEventListener("click", function () {
+        document.getElementById("carouselExampleIndicators").style.display = "none";
+        document.getElementById("main").style.display = "none";
+        document.getElementById("item").style.display = "none";
+        document.getElementById("customer").style.display = "none";
+        document.getElementById("newOrder").style.display = "block";
+    });
+
+</script>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<script src="db/DB.js"></script>
+<script src="model/customer.js"></script>
+<script src="model/item.js"></script>
+<script src="controller/customerController.js"></script>
+<script src="controller/itemController.js"></script>
+
 </body>
 </html>

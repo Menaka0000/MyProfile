@@ -21,6 +21,25 @@
 ::-webkit-scrollbar:hover {
     width: 8px;
 }
+.fa-times-circle{
+    color: #d52424;
+    position: absolute;
+    margin: auto;
+    right: 10px;
+    bottom: 10px;
+    display: none;
+}
+.fa-check-circle{
+    color:rgb(18, 134, 60);
+    position: absolute;
+    margin: auto;
+    right: 10px;
+    bottom: 10px;
+    display: none;
+}
+.form-group{
+    position: relative;
+}
 body{
     height: 100vh;
     background: linear-gradient( rgba(33, 37, 41,.9), rgba(33, 37, 41,1));
@@ -94,6 +113,10 @@ body{
     margin: auto;
     left: 0;
     right: 0;
+
+}
+.swal-text {
+    color:rgba(15, 15, 15,1);
 
 }
 @media all and (max-width: 991px) {
