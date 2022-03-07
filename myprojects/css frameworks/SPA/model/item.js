@@ -5,34 +5,34 @@ function itemDTO(id,name,description,qty,price){
     var __qty =qty;
     var __price = price;
 
-    this.setID=function (id){
+    this.setItemID=function (id){
         __id=id;
     }
-    this.setName=function (name){
+    this.setItemName=function (name){
         __name=name;
     }
-    this.setDescription=function (description){
+    this.setItemDescription=function (description){
         __description=name;
     }
-    this.setQty=function (qty){
+    this.setItemQty=function (qty){
         __qty=qty;
     }
-    this.setPrice=function (price){
+    this.setItemPrice=function (price){
         __price=price;
     }
-    this.getId=function (){
+    this.getItemId=function (){
         return __id;
     }
-    this.getName = function(){
+    this.getItemName = function(){
         return __name;
     }
-    this.getDescription = function(){
+    this.getItemDescription = function(){
         return __description;
     }
-    this.getQty = function (){
+    this.getItemQty = function (){
         return __qty;
     }
-    this.getPrice = function (){
+    this.getItemPrice = function (){
         return __price;
     }
 

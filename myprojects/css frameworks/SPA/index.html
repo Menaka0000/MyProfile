@@ -226,28 +226,8 @@
                             <th scope="col">Price</th>
                         </tr>
                         </thead>
-                        <tbody>
-                        <tr>
-                            <th scope="row">I001</th>
-                            <td>Laptop</td>
-                            <td>ASUS ROG SCAR 15</td>
-                            <td>3</td>
-                            <td> 425000 LKR</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">I002</th>
-                            <td>Laptop</td>
-                            <td>MSI CREATOR Z16</td>
-                            <td>4</td>
-                            <td> 550000 LKR</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">I003</th>
-                            <td>Processor</td>
-                            <td>AMD RYZEN THREADRIPPER 3990X</td>
-                            <td>Pre Order</td>
-                            <td>1000000 LKR</td>
-                        </tr>
+                        <tbody id="itemTBody">
+
                         </tbody>
                     </table>
                 </div>
@@ -262,42 +242,49 @@
                     <form>
                         <h3 class="bg-gradient">Item details</h3>
                         <div class="form-group ">
-                            <label class="pt-3" for="InputIId">Item Id</label>
-                            <input aria-describedby="emailHelp" class="form-control colorFix1" id="InputIId"
+                            <label class="pt-3" for="txtItemId">Item Id</label>
+                            <input aria-describedby="emailHelp" class="form-control colorFix1" id="txtItemId"
                                    placeholder="Enter Id"
                                    type="text">
+                            <i class="far fa-times-circle" id="ItemIdCro"></i>
+                            <i class="far fa-check-circle" id="ItemIdChe"></i>
                         </div>
                         <div class="form-group  pt-2">
-                            <label class="pt-3" for="ItemName">Item Name</label>
-                            <input aria-describedby="emailHelp" class="form-control colorFix1" id="ItemName"
+                            <label class="pt-3" for="txtItemName">Item Name</label>
+                            <input aria-describedby="emailHelp" class="form-control colorFix1" id="txtItemName"
                                    placeholder="Enter Item Name"
                                    type="text">
-
+                            <i class="far fa-times-circle" id="ItemNameCro"></i>
+                            <i class="far fa-check-circle" id="ItemNameChe"></i>
                         </div>
                         <div class="form-group  pt-2">
-                            <label class="pt-3" for="Description">Description</label>
-                            <input aria-describedby="emailHelp" class="form-control colorFix1" id="Description"
+                            <label class="pt-3" for="txtItemDes">Description</label>
+                            <input aria-describedby="emailHelp" class="form-control colorFix1" id="txtItemDes"
                                    placeholder="Enter Description"
                                    type="text">
-
+                            <i class="far fa-times-circle" id="ItemDesCro"></i>
+                            <i class="far fa-check-circle" id="ItemDesChe"></i>
                         </div>
                         <div class="form-group  pt-2">
-                            <label class="pt-3" for="qty">Qty</label>
-                            <input aria-describedby="emailHelp" class="form-control colorFix1" id="qty"
+                            <label class="pt-3" for="txtItemQty">Qty</label>
+                            <input aria-describedby="emailHelp" class="form-control colorFix1" id="txtItemQty"
                                    placeholder="Enter Qty"
                                    type="text">
-
+                            <i class="far fa-times-circle" id="ItemQtyCro"></i>
+                            <i class="far fa-check-circle" id="ItemQtyChe"></i>
                         </div>
                         <div class="form-group  pt-2">
-                            <label class="pt-3" for="price">Price</label>
-                            <input aria-describedby="emailHelp" class="form-control colorFix1" id="price"
+                            <label class="pt-3" for="txtItemPrice">Price</label>
+                            <input aria-describedby="emailHelp" class="form-control colorFix1" id="txtItemPrice"
                                    placeholder="Enter Price"
                                    type="text">
-
+                            <i class="far fa-times-circle" id="ItemPriceCro"></i>
+                            <i class="far fa-check-circle" id="ItemPriceChe"></i>
                         </div>
                         <div class="pb-5 pt-2" id="btnMain1">
-                            <button class="btn btn-primary" type="button">Save or Update</button>
-                            <button class="btn btn-danger m-lg-3" type="button">Delete</button>
+                            <button class="btn btn-primary" id="btnItemSave" type="button">Save or Update</button>
+                            <button class="btn btn-primary" id="btnItemSearch" type="button">Search</button>
+                            <button class="btn btn-danger m-lg-3" id="btnItemDelete" type="button">Delete</button>
                         </div>
                     </form>
                 </div>

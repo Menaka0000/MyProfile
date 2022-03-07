@@ -4,7 +4,7 @@ $("#btnCusSave").click(function () {
         if (checkIfValid()) {
             saveCustomer(newCustomer);
             loadAllCustomers();
-            swal("Saved!", newCustomer.getId()+" customer was saved successfully", "success");
+            swal("Saved!", newCustomer.getCusId()+" customer was saved successfully", "success");
         }
     } else {
         swal({
@@ -17,7 +17,7 @@ $("#btnCusSave").click(function () {
             .then((willDelete) => {
                 if (willDelete) {
                     if(updateCustomer( $("#txtId").val(),$("#txtFName").val(), $("#txtLName").val(),$("#txtAddress").val(), $("#txtSalary").val())){
-                        swal("Poof! Existing customer has been Updated!", {
+                        swal("Existing customer has been Updated!", {
                             icon: "success",
                         });
                         $("#cusTBody").empty();
@@ -47,11 +47,11 @@ $("#btnCusSearch").click(function () {
     }else {
          var typedCustomerID = $("#txtId").val();
                    var srcCustomer = searchCustomer(typedCustomerID);
-                   $("#txtId").val(srcCustomer.getId());
-                   $("#txtFName").val(srcCustomer.getFirstName());
-                   $("#txtLName").val(srcCustomer.getLastName());
-                   $("#txtAddress").val(srcCustomer.getAddress());
-                   $("#txtSalary").val(srcCustomer.getSalary());
+                   $("#txtId").val(srcCustomer.getCusId());
+                   $("#txtFName").val(srcCustomer.getCusFirstName());
+                   $("#txtLName").val(srcCustomer.getCusLastName());
+                   $("#txtAddress").val(srcCustomer.getCusAddress());
+                   $("#txtSalary").val(srcCustomer.getCusSalary());
     }
 });
 
@@ -76,7 +76,6 @@ const cusSalaryRegEx = /^[0-9]{1,}[.]?[0-9]{1,2}$/;
 
 
 $('#txtCusId,#txtFName,#txtLName,#txtAddress,#txtSalary').on('keydown', function (eventOb) {
-
     if (eventOb.key == "Tab") {
         eventOb.preventDefault();
     }
@@ -140,7 +139,6 @@ function clearAll() {
     $('#cusIdChe,#cusFirstNameChe,#cusLastNameChe,#cusAddressChe,#cusSalaryChe').css('display', 'none');
     $('#txtId').focus();
     $("#btnCusSave").attr('disabled', true);
-    // $("#lblcusid,#lblcusname,#lblcusaddress,#lblcussalary").text("");
 }
 
 function formValid() {

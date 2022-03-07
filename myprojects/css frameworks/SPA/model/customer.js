@@ -5,34 +5,34 @@ function CustomerDTO(id, firstName,lastName, address, salary){
     var __address= address;
     var __salary = salary;
 
-    this.setId= function (id){
+    this.setCusId= function (id){
         __id=id;
     }
-    this.setFirstName = function (name){
+    this.setCusFirstName = function (name){
         __firstName= name;
     }
-    this.setLastName = function (name){
+    this.setCusLastName = function (name){
         __lastName= name;
     }
-    this.setAddress = function(address){
+    this.setCusAddress = function(address){
         __address=address;
     }
-    this.setSalary= function(salary){
+    this.setCusSalary= function(salary){
         __salary=salary;
     }
-    this.getId = function (){
+    this.getCusId = function (){
         return __id;
     }
-    this.getFirstName= function (){
+    this.getCusFirstName= function (){
         return __firstName;
     }
-    this.getLastName= function (){
+    this.getCusLastName= function (){
         return __lastName;
     }
-    this.getAddress= function (){
+    this.getCusAddress= function (){
         return __address;
     }
-    this.getSalary= function (){
+    this.getCusSalary= function (){
         return __salary;
     }
 }
