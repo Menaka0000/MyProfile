@@ -137,3 +137,45 @@ function deleteItem(id){
     }
     return false;
 }
+
+/*Order script*/
+
+function loadAllCusID(){
+    $("#dropdown1").empty();
+    $("#dropdown1").append(`<option value="" disabled selected hidden>Select ID</option>`);
+    for (let i = 0; i < customerDB.length; i++) {
+        let id=   `<option value="${customerDB[i].getCusId()}">${customerDB[i].getCusId()}</option>`;
+        $("#dropdown1").append(id);
+    }
+}
+function loadAllItemID(){
+    $("#dropdown2").empty();
+    $("#dropdown2").append(`<option value="" disabled selected hidden>Select ID</option>`);
+    for (let i = 0; i < itemDB.length; i++) {
+        let id= `<option value="${itemDB[i].getItemId()}">${itemDB[i].getItemId()}</option>`;
+        $("#dropdown2").append(id);
+    }
+}
+
+function loadCusDetails(id){
+    for (let i = 0; i < customerDB.length; i++) {
+        if (customerDB[i].getCusId() === id) {
+            $("#orderCusId").val(customerDB[i].getCusId());
+            $("#orderCusFName").val(customerDB[i].getCusFirstName());
+            $("#orderCusLName").val(customerDB[i].getCusLastName());
+            $("#orderCusAddress").val(customerDB[i].getCusAddress());
+            $("#orderCusSalary").val(customerDB[i].getCusSalary());
+        }
+    }
+}
+function loadItemDetails(id){
+    for (let i = 0; i < itemDB.length; i++) {
+        if (itemDB[i].getItemId() === id) {
+            $("#orderItemId").val(itemDB[i].getItemId());
+            $("#orderItemName").val(itemDB[i].getItemName());
+            $("#orderItemDescription").val(itemDB[i].getItemDescription());
+            $("#qtyOnStock").val(itemDB[i].getItemQty());
+            $("#orderItemPrice").val(itemDB[i].getItemPrice());
+        }
+    }
+}

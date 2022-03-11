@@ -193,7 +193,7 @@
                         <div class="pb-5 pt-2" id="btnMain2">
                             <button class="btn btn-primary" id="btnCusSave" type="button">Save or Update</button>
                             <button class="btn btn-primary" id="btnCusSearch" type="button">Search</button>
-                            <button class="btn btn-danger m-lg-3"  id="btnCusDelete" type="button">Delete</button>
+                            <button class="btn btn-danger m-lg-3" id="btnCusDelete" type="button">Delete</button>
                         </div>
                     </form>
                 </div>
@@ -307,18 +307,13 @@
                 <div class="col-2"></div>
                 <div class="col-3"><h3 class="bg-gradient">Customer details</h3></div>
                 <div class="col-1">
-                    <div class="dropdown">
-                        <button aria-expanded="false" aria-haspopup="true"
-                                class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" id="dropdownMenuButton"
-                                type="button">
-                            Customer Id
-                        </button>
-                        <div aria-labelledby="dropdownMenuButton" class="dropdown-menu">
-                            <a class="dropdown-item" href="#">Action</a>
-                            <a class="dropdown-item" href="#">Another action</a>
-                            <a class="dropdown-item" href="#">Something else here</a>
-                        </div>
-                    </div>
+                    <form name="customerIdForm" >
+                        <select  id="dropdown1" onchange="loadIds()" >
+
+                        </select>
+                    </form>
+
+
                 </div>
             </div>
             <div class="row">     <!--just for grid handling-->
@@ -328,24 +323,19 @@
                         <div class="col-5">
                             <form>
                                 <div class="form-group form-control-sm">
-                                    <label class="" for="InputCId1">Customer Id</label>
-                                    <input aria-describedby="emailHelp" class="form-control colorFix1" id="InputCId1"
-                                           placeholder="Enter Id"
+                                    <label class="" for="orderCusId">Customer Id</label>
+                                    <input aria-describedby="emailHelp" class="form-control colorFix1" id="orderCusId"
                                            type="text">
                                 </div>
                                 <div class="form-group  form-control-sm">
-                                    <label class="" for="InputFName1">First Name</label>
-                                    <input aria-describedby="emailHelp" class="form-control colorFix1" id="InputFName1"
-                                           placeholder="Enter First Name"
+                                    <label class="" for="orderCusFName">First Name</label>
+                                    <input aria-describedby="emailHelp" class="form-control colorFix1" id="orderCusFName"
                                            type="text">
-
                                 </div>
                                 <div class="form-group form-control-sm ">
-                                    <label class="" for="InputLName1">Last Name</label>
-                                    <input aria-describedby="emailHelp" class="form-control colorFix1" id="InputLName1"
-                                           placeholder="Enter Last Name"
+                                    <label class="" for="orderCusFName">Last Name</label>
+                                    <input aria-describedby="emailHelp" class="form-control colorFix1" id="orderCusLName"
                                            type="text">
-
                                 </div>
                             </form>
                         </div>
@@ -353,19 +343,18 @@
                         <div class="col-5">
                             <form>
                                 <div class="form-group form-control-sm ">
-                                    <label class="" for="InputAddress1">Address</label>
+                                    <label class="" for="orderCusAddress">Address</label>
                                     <input aria-describedby="emailHelp" class="form-control colorFix1"
-                                           id="InputAddress1"
-                                           placeholder="Enter Address"
+                                           id="orderCusAddress"
+
                                            type="text">
 
                                 </div>
                                 <div class="form-group  form-control-sm">
-                                    <label class="" for="InputSalary1">salary</label>
-                                    <input aria-describedby="emailHelp" class="form-control colorFix1" id="InputSalary1"
-                                           placeholder="Enter Salary"
-                                           type="text">
+                                    <label class="" for="orderCusSalary">salary</label>
+                                    <input aria-describedby="emailHelp" class="form-control colorFix1" id="orderCusSalary"
 
+                                           type="text">
                                 </div>
                             </form>
                         </div>
@@ -382,17 +371,11 @@
                 <div class="col-2"></div>
                 <div class="col-3"><h3 class="bg-gradient">Item details</h3></div>
                 <div class="col-1">
-                    <div class="dropdown">
-                        <button aria-expanded="false" aria-haspopup="true" class="btn btn-secondary dropdown-toggle"
-                                data-toggle="dropdown" id="dropdownMenuButton1" type="button">
-                            Item Id
-                        </button>
-                        <div aria-labelledby="dropdownMenuButton1" class="dropdown-menu">
-                            <a class="dropdown-item" href="#">Action</a>
-                            <a class="dropdown-item" href="#">Another action</a>
-                            <a class="dropdown-item" href="#">Something else here</a>
-                        </div>
-                    </div>
+                    <form name="customerIdForm" >
+                        <select  id="dropdown2" onchange="loadItemIds()" >
+
+                        </select>
+                    </form>
                 </div>
             </div>
             <div class="row">     <!--just for grid handling-->
@@ -402,21 +385,18 @@
                         <div class="col-4">
                             <form>
                                 <div class="form-group form-control-sm">
-                                    <label for="InputIId1">Item Id</label>
-                                    <input aria-describedby="emailHelp" class="form-control colorFix1" id="InputIId1"
-                                           placeholder="Enter Id"
+                                    <label for="orderItemId">Item Id</label>
+                                    <input aria-describedby="emailHelp" class="form-control colorFix1" id="orderItemId"
                                            type="text">
                                 </div>
                                 <div class="form-group  form-control-sm">
-                                    <label for="ItemName1">Item Name</label>
-                                    <input aria-describedby="emailHelp" class="form-control colorFix1" id="ItemName1"
-                                           placeholder="Enter Item Name"
+                                    <label for="orderItemName">Item Name</label>
+                                    <input aria-describedby="emailHelp" class="form-control colorFix1" id="orderItemName"
                                            type="text">
                                 </div>
                                 <div class="form-group  form-control-sm">
-                                    <label for="Description1">Description</label>
-                                    <input aria-describedby="emailHelp" class="form-control colorFix1" id="Description1"
-                                           placeholder="Enter Description"
+                                    <label for="orderItemDescription">Description</label>
+                                    <input aria-describedby="emailHelp" class="form-control colorFix1" id="orderItemDescription"
                                            type="text">
                                 </div>
                             </form>
@@ -425,22 +405,24 @@
                         <div class="col-4">
                             <form>
                                 <div class="form-group  form-control-sm">
-                                    <label for="qty1">Qty in Stock</label>
-                                    <input aria-describedby="emailHelp" class="form-control colorFix1" id="qty1"
-                                           placeholder="Enter Qty"
+                                    <label for="qtyOnStock">Qty in Stock</label>
+                                    <input aria-describedby="emailHelp" class="form-control colorFix1" id="qtyOnStock"
                                            type="text">
-
                                 </div>
                                 <div class="form-group  form-control-sm">
-                                    <label for="price1">Price</label>
-                                    <input aria-describedby="emailHelp" class="form-control colorFix1" id="price1"
-                                           placeholder="Enter Price"
+                                    <label for="orderItemPrice">Price</label>
+                                    <input aria-describedby="emailHelp" class="form-control colorFix1" id="orderItemPrice"
                                            type="text">
-
+                                </div>
+                                <div class="form-group  form-control-sm">
+                                    <label for="orderItemPrice">Qty for sale</label>
+                                    <input aria-describedby="emailHelp" class="form-control colorFix1" id="orderQtyForSale"
+                                           placeholder="Enter Qty"
+                                           type="text">
                                 </div>
                                 <div class="pb-5 pt-2" id="btnMain">
-                                    <button class="btn btn-primary" type="button">Add to cart</button>
-                                    <button class="btn btn-danger " type="button">Clear</button>
+                                    <button class="btn btn-primary" type="button" id="btnAddToCart">Add to cart</button>
+                                    <button class="btn btn-danger " type="button" id="btnCartItemClear">Clear</button>
                                 </div>
                             </form>
                         </div>
@@ -467,24 +449,7 @@
                     </tr>
                     </thead>
                     <tbody>
-                    <tr>
-                        <th scope="row">I001</th>
-                        <td>Laptop</td>
-                        <td>ASUS ROG SCAR 15</td>
-                        <td>1</td>
-                        <td> 425000 LKR</td>
-                        <td> 0 LKR</td>
-                        <td> 425000 LKR</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">I002</th>
-                        <td>Laptop</td>
-                        <td>MSI CREATOR Z16</td>
-                        <td>1</td>
-                        <td> 550000 LKR</td>
-                        <td> 0 LKR</td>
-                        <td> 550000 LKR</td>
-                    </tr>
+
                     </tbody>
                 </table>
             </div>
@@ -527,7 +492,7 @@
                                        type="text">
                             </div>
                             <div class="mt-3">
-                                <button class="btn btn-primary" type="button">Place Order</button>
+                                <button class="btn btn-primary" type="button" >Place Order</button>
                                 <button class="btn btn-danger" type="button">Cancel</button>
                             </div>
                         </form>
@@ -599,6 +564,8 @@
         document.getElementById("item").style.display = "none";
         document.getElementById("customer").style.display = "none";
         document.getElementById("newOrder").style.display = "block";
+        loadAllCusID();
+        loadAllItemID();
     });
 
 </script>
@@ -606,8 +573,11 @@
 <script src="db/DB.js"></script>
 <script src="model/customer.js"></script>
 <script src="model/item.js"></script>
+<script src="model/order.js"></script>
+<script src="model/cartItem.js"></script>
 <script src="controller/customerController.js"></script>
 <script src="controller/itemController.js"></script>
+<script src="controller/orderController.js"></script>
 
 </body>
 </html>

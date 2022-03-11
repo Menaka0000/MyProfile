@@ -119,6 +119,13 @@ body{
     color:rgba(15, 15, 15,1);
 
 }
+
+#dropdown1,#dropdown2{
+    color: black;
+    background-color: #d1dae8;
+    font-weight: bold;
+}
+
 @media all and (max-width: 991px) {
     #inputSearch {
         position: relative;
