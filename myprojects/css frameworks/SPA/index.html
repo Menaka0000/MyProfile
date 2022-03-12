@@ -405,17 +405,17 @@
                         <div class="col-4">
                             <form>
                                 <div class="form-group  form-control-sm">
-                                    <label for="qtyOnStock">Qty in Stock</label>
-                                    <input aria-describedby="emailHelp" class="form-control colorFix1" id="qtyOnStock"
-                                           type="text">
-                                </div>
-                                <div class="form-group  form-control-sm">
                                     <label for="orderItemPrice">Price</label>
                                     <input aria-describedby="emailHelp" class="form-control colorFix1" id="orderItemPrice"
                                            type="text">
                                 </div>
                                 <div class="form-group  form-control-sm">
-                                    <label for="orderItemPrice">Qty for sale</label>
+                                    <label for="qtyOnStock">Qty in Stock</label>
+                                    <input aria-describedby="emailHelp" class="form-control colorFix1" id="qtyOnStock"
+                                           type="text">
+                                </div>
+                                <div class="form-group  form-control-sm">
+                                    <label for="orderQtyForSale">Qty for sale</label>
                                     <input aria-describedby="emailHelp" class="form-control colorFix1" id="orderQtyForSale"
                                            placeholder="Enter Qty"
                                            type="text">
@@ -444,11 +444,10 @@
                         <th scope="col">Description</th>
                         <th scope="col">Qty for sale</th>
                         <th scope="col"> Unit Price</th>
-                        <th scope="col"> Discount</th>
                         <th scope="col"> Total</th>
                     </tr>
                     </thead>
-                    <tbody>
+                    <tbody id="orderTBody">
 
                     </tbody>
                 </table>

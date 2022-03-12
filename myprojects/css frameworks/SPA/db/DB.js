@@ -148,6 +148,7 @@ function loadAllCusID(){
         $("#dropdown1").append(id);
     }
 }
+
 function loadAllItemID(){
     $("#dropdown2").empty();
     $("#dropdown2").append(`<option value="" disabled selected hidden>Select ID</option>`);
@@ -179,3 +180,15 @@ function loadItemDetails(id){
         }
     }
 }
+
+function updateItemQty(id,qty){
+    for (let i = 0; i < itemDB.length; i++) {
+        if (itemDB[i].getItemId() === id) {
+           itemDB[i].setItemQty(qty);
+        }
+    }
+}
+
+
+
+

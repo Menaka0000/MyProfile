@@ -1,7 +1,8 @@
-function cartItem(id,name,description,qtyForSale,price){
+function cartItem(id,qtyForSale,price,cost){
     var __id=id;
     var __qtyForSale =qtyForSale;
     var __price = price;
+    var __cost = cost;
 
     this.setCItemID=function (id){
         __id=id;
@@ -12,6 +13,9 @@ function cartItem(id,name,description,qtyForSale,price){
     this.setCItemPrice=function (price){
         __price=price;
     }
+    this.setCItemCost=function (cost){
+        __price=cost;
+    }
     this.getCItemId=function (){
         return __id;
     }
@@ -20,6 +24,9 @@ function cartItem(id,name,description,qtyForSale,price){
     }
     this.getCItemPrice = function (){
         return __price;
+    }
+    this.getCItemCost = function (){
+        return __cost;
     }
 
 }
