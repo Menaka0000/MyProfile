@@ -91,16 +91,6 @@ $("#txtItemId").on('keyup', function (eventOb) {
         checkIfValidItem();
     }
 
-    /* if (eventOb.key == "Control") {
-         var typedCustomerID = $("#txtId").val();
-         var srcCustomer = searchCustomer(typedCustomerID);
-         $("#txtId").val(srcCustomer.getId());
-         $("#txtFName").val(srcCustomer.getFirstName());
-         $("#txtLName").val(srcCustomer.getLastName());
-         $("#txtAddress").val(srcCustomer.getAddress());
-         $("#txtSalary").val(srcCustomer.getSalary());
-     }
- */
 
 });
 
