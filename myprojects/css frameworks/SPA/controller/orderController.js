@@ -23,9 +23,8 @@ $("#btnAddToCart").click(function () {
                 updateItemQty($("#orderItemId").val(), updatedStockQty);
                 $("#qtyOnStock").val(updatedStockQty);
                 $("#orderTBody").append(`<tr><td>${$("#orderItemId").val()}</td><td>${$("#orderItemName").val()}</td><td>${$("#orderItemDescription").val()}</td><td>${$("#orderQtyForSale").val()}</td><td>${$("#orderItemPrice").val()}</td><td>${costForItem}</td></tr>`);
-
+                totalCalculate();
             } else {
-
                 swal({
                     title: "Confirmation",
                     text: "This item is already in the cart, Do you want to add more!",
@@ -39,23 +38,24 @@ $("#btnAddToCart").click(function () {
                             let newQtyForSale = parseInt(itemForUpdate.getQtyForSale()) + parseInt($("#orderQtyForSale").val());
                             itemForUpdate.setQtyForSale(newQtyForSale);
                             let newCost = parseInt(itemForUpdate.getCItemPrice()) * newQtyForSale;
+                            console.log(newCost);
                             itemForUpdate.setCItemCost(newCost);
-
+                            totalCalculate();
+                            console.log(itemForUpdate.getCItemCost()+'fuck you');
                             var table = document.getElementById('orderTBody');
                             var rowLength = table.rows.length;
 
                             for (var i = 0; i < rowLength; i += 1) {
                                 var row = table.rows[i];
                                 let rowId = $(row.cells[0]).text();
-                                console.log(rowId);
+
                                 typeof ($(row.cells[0]).val());
                                 let cartItemID = cartValidate($("#orderItemId").val()).getCItemId();
-                                console.log(cartItemID);
+
                                 if (rowId === cartItemID) {
                                     row.cells[3].innerText = String(newQtyForSale);
                                     row.cells[5].innerText = String(newCost);
                                 }
-
                                 //your code goes here, looping over every row.
                                 //cells are accessed as easy
 
@@ -79,6 +79,8 @@ $("#btnAddToCart").click(function () {
     }
 });
 
+$("#btnPlaceOrder").attr('disabled', true);
+
 function cartValidate(itemID) {
     for (let i = 0; i < cartItems.length; i++) {
         if (cartItems[i].getCItemId() === itemID) {
@@ -88,25 +90,60 @@ function cartValidate(itemID) {
     return false;
 }
 
-function  loadItemFromCart(id){
-    for (let i = 0; i < cartItems.length; i++) {
-        if (cartItems[i].getCItemId() === id) {
-            $("#orderItemId").val(cartItems[i].getCItemId());
-            $("#qtyOnStock").val(cartItems[i].getQtyOnStock());
-        }
+$("#btnPlaceOrder").click(function (){
+    placeOrder();
+});
+
+function placeOrder(){
+   if(orderIdValidate()){
+       var newOrder= new orderDTO($("#orderId").val(),$("#orderCusId").val(),$("#date").val(),$("#time").val(),$("#total"),cartItems);
+       saveOrder(newOrder);
+       swal($("#orderId").val()+" order has been placed successfully!", "");
+   }
+}
+const OrderIDRegEx = /^(O00-)[0-9]{1,3}$/;
+
+function orderIdValidate() {
+    if (OrderIDRegEx.test($("#orderId").val())) {
+        $("#orderCro").css('display', 'none');
+        $("#orderChe").css('display', 'block');
+        return true;
+    }else {
+        $("#orderCro").css('display', 'block');
+        $("#orderChe").css('display', 'none');
+        return false;
     }
 }
 
-function loadMissingDetails(id){
-    for (let i = 0; i < itemDB.length; i++) {
-        if (itemDB[i].getItemId() === id) {
-            $("#orderItemName").val(itemDB[i].getItemName());
-            $("#orderItemDescription").val(itemDB[i].getItemDescription());
-            $("#orderItemPrice").val(itemDB[i].getItemPrice());
-        }
+$('#orderId').on('keydown', function (eventOb) {
+    if (eventOb.key == "Tab") {
+        eventOb.preventDefault();
+    }
+});
+
+$("#orderId").on('keyup', function (eventOb) {
+    setButtonOnOrderForm();
+    orderIdValidate();
+    if (eventOb.key == "Enter") {
+        orderIdValidate();
+    }
+});
+
+function setButtonOnOrderForm() {
+    let b = orderIdValidate();
+    if (b) {
+        $("#btnPlaceOrder").attr('disabled', false);
+    } else {
+        $("#btnPlaceOrder").attr('disabled', true);
     }
 }
-
-function  updateCart(){
-
+function totalCalculate(){
+    let total=0;
+    for (let i = 0; i<cartItems.length; i++){
+        total+=cartItems[i].getCItemCost();
+    }
+    console.log(total);
+    $("#total").empty();
+    $("#total").text(total);
 }
+

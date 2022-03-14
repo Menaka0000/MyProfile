@@ -21,6 +21,7 @@
 ::-webkit-scrollbar:hover {
     width: 8px;
 }
+
 .fa-times-circle{
     color: #d52424;
     position: absolute;
@@ -29,6 +30,7 @@
     bottom: 10px;
     display: none;
 }
+
 .fa-check-circle{
     color:rgb(18, 134, 60);
     position: absolute;
@@ -37,16 +39,20 @@
     bottom: 10px;
     display: none;
 }
+
 .form-group{
     position: relative;
 }
+
 body{
     height: 100vh;
     background: linear-gradient( rgba(33, 37, 41,.9), rgba(33, 37, 41,1));
 }
+
 .input{
     color: rgba(0,0,0,.8);
 }
+
 #form1 {
     position: absolute;
     margin: auto;
@@ -103,7 +109,7 @@ body{
     font-size: 1.5em;
     background-color: #535b63;
     border-radius: 5px;
-    height: 60px;
+    height: 90px;
     margin-top: 10px;
 }
 .myLabel > p:nth-child(1){
@@ -115,6 +121,17 @@ body{
     right: 0;
 
 }
+#total{
+    height: fit-content;
+    width: fit-content;
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    font-weight: bold;
+}
 .swal-text {
     color:rgba(15, 15, 15,1);
 
@@ -125,7 +142,10 @@ body{
     background-color: #d1dae8;
     font-weight: bold;
 }
-
+#discount{
+    position: relative;
+    top: 52px;
+}
 @media all and (max-width: 991px) {
     #inputSearch {
         position: relative;

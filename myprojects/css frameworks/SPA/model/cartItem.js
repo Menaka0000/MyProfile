@@ -14,7 +14,7 @@ function cartItem(id,qtyForSale,price,cost){
         __price=price;
     }
     this.setCItemCost=function (cost){
-        __price=cost;
+        __cost=cost;
     }
     this.getCItemId=function (){
         return __id;

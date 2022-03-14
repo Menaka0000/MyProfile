@@ -189,6 +189,9 @@ function updateItemQty(id,qty){
     }
 }
 
-
+function saveOrder(orderDTO){
+    OrderDB.push(orderDTO);
+    console.log(orderDTO);
+}
 
 
