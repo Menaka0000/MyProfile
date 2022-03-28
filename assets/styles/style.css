@@ -1630,14 +1630,21 @@ textarea {
 
 /*RESPONSIVE MEDIA QUERIES*/
 @media all and (max-width: 1600px)/*and (min-width: 1024px)*/ {
+    #main-container > img{
+        width: 370px;
+        height: 380px;
+    }
+    #p-01 {
+        top: -90px;
+    }
     body > main > section:nth-child(2) > article {
         bottom: 120px;
     }
     #section1_anima_1-1{
-        top: -40px;
+        top: -70px;
     }
     #Skill-heading{
-        bottom: 40px;
+        bottom: 70px;
     }
     #des-container{
         top: 12px;
@@ -1649,7 +1656,7 @@ textarea {
         top: -55px;
     }
     #main-container > div:nth-child(9){
-        width: 82%;
+        width: 91%;
     }
     body > main > section:nth-child(4) > section:nth-child(2) > div:nth-child(3),
     body > main > section:nth-child(4) > section:nth-child(2) > div:nth-child(2),
