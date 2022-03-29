@@ -1,6 +1,7 @@
 * {
     padding: 0;
     margin: 0;
+
 }
 
 a {
@@ -239,7 +240,7 @@ body > main > section:nth-child(1) > div:nth-child(2) > img {
     font-family: 'Titillium Web', sans-serif;
     font-size: 1.2rem;
     position: absolute;
-    width: 68%;
+    width: 1045px;
     height: fit-content;
     color: #d1dae8;
     /*    top: 420px;*/
@@ -253,7 +254,7 @@ body > main > section:nth-child(1) > div:nth-child(2) > img {
 #wel-banner {
     position: relative;
     height: fit-content;
-    top: 100px;
+    top: 155px;
 }
 
 /*
@@ -349,6 +350,7 @@ body > main > section:nth-child(1) > div:nth-child(2) > img {
     width: 800px;
     height: fit-content;
     left: 50%;
+    top: 20px;
     transform: translateX(-50%);
 }
 
@@ -416,6 +418,31 @@ body > main > section:nth-child(1) > div:nth-child(2) > img {
     /*-webkit-animation-delay: 3s, 5s;*/
     /*-webkit-animation-fill-mode: forwards, forwards;*/
 }
+#s-img1{
+    width: 220px;
+    height: 90px;
+    position: absolute;
+    margin: auto;
+    left: -37px;
+    bottom: -43px;
+}
+#s-img2{
+    width: 220px;
+    height: 90px;
+    position: absolute;
+    margin: auto;
+    left: -25px;
+    bottom: -43px;
+}
+
+#s-img3{
+    width: 220px;
+    height: 90px;
+    position: absolute;
+    margin: auto;
+    right: 23px;
+    bottom: -43px;
+}
 
 #section1_anima_1-4 {
     /*opacity: 0;*/
@@ -450,7 +477,7 @@ body > main > section:nth-child(1) > div:nth-child(2) > img {
     position: relative;
     left: 50%;
     transform: translateX(-50%);
-    top: 70px;
+    top: 100px;
 }
 
 #section1_anima_1-3 {
@@ -1634,6 +1661,9 @@ textarea {
         width: 370px;
         height: 380px;
     }
+    #links_div-home{
+        bottom: 20px;
+    }
     #p-01 {
         top: -90px;
     }
@@ -1644,10 +1674,11 @@ textarea {
         top: -70px;
     }
     #Skill-heading{
-        bottom: 70px;
+        /*bottom: 70px;*/
+        top: -50px;
     }
     #des-container{
-        top: 12px;
+        top: 20px;
     }
     .glitch_text,#section1_anima_1-0{
         top: -45px;
@@ -1657,6 +1688,7 @@ textarea {
     }
     #main-container > div:nth-child(9){
         width: 91%;
+        bottom: 60px;
     }
     body > main > section:nth-child(4) > section:nth-child(2) > div:nth-child(3),
     body > main > section:nth-child(4) > section:nth-child(2) > div:nth-child(2),
