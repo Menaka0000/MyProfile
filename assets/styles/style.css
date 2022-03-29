@@ -1667,6 +1667,9 @@ textarea {
     #p-01 {
         top: -90px;
     }
+    #wel-banner{
+        top: 100px;
+    }
     body > main > section:nth-child(2) > article {
         bottom: 120px;
     }
@@ -1675,7 +1678,7 @@ textarea {
     }
     #Skill-heading{
         /*bottom: 70px;*/
-        top: -50px;
+        top: -60px;
     }
     #des-container{
         top: 20px;

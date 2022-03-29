@@ -1,0 +1,478 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="974d7211-244d-4ea1-bad1-e3c391a65079" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operator/repeat.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operator/repeat.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operator/repeat.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operator/repeatWhen.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operator/repeatWhen.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operator/repeatWhen.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operator/retry.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operator/retry.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operator/retry.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operator/retryWhen.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operator/retryWhen.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operator/retryWhen.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operator/sample.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operator/sample.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operator/sample.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operator/sampleTime.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operator/sampleTime.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operator/sampleTime.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operator/scan.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operator/scan.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operator/scan.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operator/sequenceEqual.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operator/sequenceEqual.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operator/sequenceEqual.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operator/share.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operator/share.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operator/share.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operator/shareReplay.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operator/shareReplay.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operator/shareReplay.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operator/single.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operator/single.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operator/single.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operator/skip.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operator/skip.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operator/skip.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operator/skipLast.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operator/skipLast.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operator/skipLast.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operator/skipUntil.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operator/skipUntil.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operator/skipUntil.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operator/skipWhile.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operator/skipWhile.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operator/skipWhile.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operator/startWith.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operator/startWith.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operator/startWith.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operator/subscribeOn.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operator/subscribeOn.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operator/subscribeOn.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operator/switch.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operator/switch.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operator/switch.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operator/switchMap.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operator/switchMap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operator/switchMap.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operator/switchMapTo.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operator/switchMapTo.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operator/switchMapTo.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operator/take.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operator/take.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operator/take.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operator/takeLast.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operator/takeLast.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operator/takeLast.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operator/takeUntil.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operator/takeUntil.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operator/takeUntil.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operator/takeWhile.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operator/takeWhile.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operator/takeWhile.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operator/throttle.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operator/throttle.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operator/throttle.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operator/throttleTime.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operator/throttleTime.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operator/throttleTime.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operator/timeInterval.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operator/timeInterval.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operator/timeInterval.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operator/timeout.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operator/timeout.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operator/timeout.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operator/timeoutWith.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operator/timeoutWith.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operator/timeoutWith.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operator/timestamp.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operator/timestamp.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operator/timestamp.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operator/toArray.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operator/toArray.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operator/toArray.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operator/toPromise.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operator/toPromise.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operator/toPromise.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operator/window.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operator/window.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operator/window.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operator/windowCount.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operator/windowCount.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operator/windowCount.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operator/windowTime.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operator/windowTime.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operator/windowTime.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operator/windowToggle.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operator/windowToggle.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operator/windowToggle.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operator/windowWhen.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operator/windowWhen.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operator/windowWhen.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operator/withLatestFrom.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operator/withLatestFrom.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operator/withLatestFrom.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operator/zip.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operator/zip.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operator/zip.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operator/zipAll.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operator/zipAll.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operator/zipAll.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operators/audit.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operators/audit.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operators/audit.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operators/auditTime.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operators/auditTime.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operators/auditTime.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operators/buffer.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operators/buffer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operators/buffer.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operators/bufferCount.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operators/bufferCount.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operators/bufferCount.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operators/bufferTime.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operators/bufferTime.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operators/bufferTime.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operators/bufferToggle.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operators/bufferToggle.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operators/bufferToggle.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operators/bufferWhen.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operators/bufferWhen.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operators/bufferWhen.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operators/catchError.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operators/catchError.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operators/catchError.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operators/combineAll.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operators/combineAll.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operators/combineAll.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operators/combineLatest.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operators/combineLatest.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operators/combineLatest.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operators/concat.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operators/concat.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operators/concat.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operators/concatAll.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operators/concatAll.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operators/concatAll.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operators/concatMap.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operators/concatMap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operators/concatMap.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operators/concatMapTo.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operators/concatMapTo.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operators/concatMapTo.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operators/count.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operators/count.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operators/count.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operators/debounce.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operators/debounce.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operators/debounce.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operators/debounceTime.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operators/debounceTime.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operators/debounceTime.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operators/defaultIfEmpty.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operators/defaultIfEmpty.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operators/defaultIfEmpty.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operators/delay.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operators/delay.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operators/delay.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operators/delayWhen.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operators/delayWhen.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operators/delayWhen.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operators/dematerialize.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operators/dematerialize.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operators/dematerialize.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operators/distinct.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operators/distinct.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operators/distinct.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operators/distinctUntilChanged.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operators/distinctUntilChanged.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operators/distinctUntilChanged.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operators/distinctUntilKeyChanged.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operators/distinctUntilKeyChanged.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operators/distinctUntilKeyChanged.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operators/elementAt.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operators/elementAt.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operators/elementAt.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operators/every.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operators/every.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operators/every.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operators/exhaust.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operators/exhaust.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operators/exhaust.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operators/exhaustMap.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operators/exhaustMap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operators/exhaustMap.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operators/expand.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operators/expand.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operators/expand.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operators/filter.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operators/filter.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operators/filter.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operators/finalize.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operators/finalize.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operators/finalize.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operators/find.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operators/find.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operators/find.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operators/findIndex.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operators/findIndex.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operators/findIndex.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operators/first.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operators/first.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operators/first.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operators/groupBy.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operators/groupBy.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operators/groupBy.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operators/ignoreElements.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operators/ignoreElements.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operators/ignoreElements.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operators/isEmpty.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operators/isEmpty.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operators/isEmpty.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operators/last.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operators/last.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operators/last.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operators/map.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operators/map.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operators/map.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operators/mapTo.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operators/mapTo.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operators/mapTo.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operators/materialize.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operators/materialize.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operators/materialize.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operators/max.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operators/max.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operators/max.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operators/merge.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operators/merge.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operators/merge.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operators/mergeAll.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operators/mergeAll.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operators/mergeAll.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operators/mergeMap.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operators/mergeMap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operators/mergeMap.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operators/mergeMapTo.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operators/mergeMapTo.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operators/mergeMapTo.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operators/mergeScan.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operators/mergeScan.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operators/mergeScan.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operators/min.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operators/min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operators/min.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operators/multicast.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operators/multicast.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operators/multicast.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operators/observeOn.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operators/observeOn.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operators/observeOn.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operators/onErrorResumeNext.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operators/onErrorResumeNext.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operators/onErrorResumeNext.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operators/pairwise.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operators/pairwise.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operators/pairwise.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operators/partition.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operators/partition.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operators/partition.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operators/pluck.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operators/pluck.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operators/pluck.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operators/publish.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operators/publish.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operators/publish.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operators/publishBehavior.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operators/publishBehavior.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operators/publishBehavior.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operators/publishLast.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operators/publishLast.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operators/publishLast.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operators/publishReplay.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operators/publishReplay.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operators/publishReplay.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operators/race.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operators/race.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operators/race.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operators/reduce.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operators/reduce.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operators/reduce.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operators/refCount.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operators/refCount.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operators/refCount.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operators/repeat.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operators/repeat.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operators/repeat.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operators/repeatWhen.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operators/repeatWhen.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operators/repeatWhen.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operators/retry.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operators/retry.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operators/retry.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operators/retryWhen.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operators/retryWhen.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operators/retryWhen.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operators/sample.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operators/sample.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operators/sample.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operators/sampleTime.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operators/sampleTime.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operators/sampleTime.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operators/scan.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operators/scan.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operators/scan.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operators/sequenceEqual.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operators/sequenceEqual.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operators/sequenceEqual.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operators/share.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operators/share.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operators/share.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operators/shareReplay.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operators/shareReplay.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operators/shareReplay.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operators/single.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operators/single.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operators/single.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operators/skip.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operators/skip.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operators/skip.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operators/skipLast.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operators/skipLast.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operators/skipLast.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operators/skipUntil.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operators/skipUntil.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operators/skipUntil.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operators/skipWhile.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operators/skipWhile.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operators/skipWhile.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operators/startWith.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operators/startWith.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operators/startWith.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operators/subscribeOn.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operators/subscribeOn.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operators/subscribeOn.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operators/switchAll.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operators/switchAll.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operators/switchAll.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operators/switchMap.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operators/switchMap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operators/switchMap.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operators/switchMapTo.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operators/switchMapTo.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operators/switchMapTo.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operators/take.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operators/take.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operators/timeoutWith.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/rxjs/operators/timestamp.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/styles/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/styles/style.css" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="26y55u0HE4HQGe9wlqjj2x8zWXD" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/assets/images" />
+    <property name="nodejs_package_manager_path" value="npm" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\IJSE Work place\Sanu Aiya\web  Projects\MyProfile\assets\images" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="974d7211-244d-4ea1-bad1-e3c391a65079" name="Default Changelist" comment="" />
+      <created>1648382808359</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1648382808359</updated>
+      <workItem from="1648382811636" duration="1683000" />
+      <workItem from="1648427815138" duration="6117000" />
+      <workItem from="1648476827002" duration="3573000" />
+      <workItem from="1648514095218" duration="8706000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="344d860f-004b-4ca9-931d-1a01fcd90195">
+          <value>
+            <State>
+              <option name="SHOW_ONLY_AFFECTED_CHANGES" value="true" />
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="HEAD" />
+                      </list>
+                    </value>
+                  </entry>
+                  <entry key="roots">
+                    <value>
+                      <list>
+                        <option value="$PROJECT_DIR$" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="OPEN_GENERIC_TABS">
+      <map>
+        <entry key="344d860f-004b-4ca9-931d-1a01fcd90195" value="TOOL_WINDOW" />
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+</project>
