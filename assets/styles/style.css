@@ -335,7 +335,7 @@ body > main > section:nth-child(1) > div:nth-child(2) > img {
     left: 20px;
     top: 0;
     font-family: 'Titillium Web', sans-serif;
-    color: aliceblue;
+    color: #d1dae8;
     font-size: 1.6rem;
     letter-spacing: 1px;
     /*    animation-name: anim1_1;
@@ -1750,20 +1750,154 @@ textarea {
         font-size: 1em;
     }
 
-    body > main > section:nth-child(1) > div:nth-child(2) {
+    /*main section 1 #home*/
+
+    #main-container {
+        width: 100%;
+    }
+    #main-container > img {
+        width: 300px;
+        height: 310px;
+    }
+
+    #p-01 {
+        top: -160px;
+    }
+    #section1_anima_1-1 {
+        top: -160px;
+        font-size: 1rem;
+    }
+    #skill1 {
+        position: absolute;
+        margin: auto;
+        width: fit-content;
+        height: fit-content;
+        left: 0;
+        top: 0;
+    }
+    #skill2 {
+        position: absolute;
+        margin: auto;
+        width: fit-content;
+        height: 100px;
         left: 0;
         right: 0;
-    }
+        top: 0;
 
-    body > main > section:nth-child(1) > section:nth-child(3) {
-        display: none;
     }
-
-    body > main > section:nth-child(1) > div:nth-child(2) {
-        width: 95%;
+    #skill3 {
+        position: absolute;
         margin: auto;
-        top: -20px;
+        width: fit-content;
+        height: fit-content;
+        right: 0;
+        top: 0;
     }
+    #s-img1,#s-img2,#s-img3{
+        width:130px;
+        height:70px;
+    }
+    #s-img1{
+        left: 0;
+        bottom: 0;
+    }
+    #s-img2 {
+        left: -15px;
+        right: 0;
+        bottom: 76px;
+    }
+    #s-img3 {
+        left: -20px;
+        right: 0;
+        bottom: 0;
+    }
+    #section1_anima_1-2 {
+        /* opacity: 0; */
+        position: relative;
+        top: -34px;
+        left: 20px;
+        font-family: 'Titillium Web', sans-serif;
+        color: rgba(8, 124, 250, .8);
+        font-weight: bold;
+        font-size: 1rem;
+        letter-spacing: 0;
+    }
+    #section1_anima_1-4 {
+        /* opacity: 0; */
+        position: relative;
+        top: -34px;
+        left: 5px;
+        font-family: 'Titillium Web', sans-serif;
+        color: rgba(8, 124, 250, .8);
+        font-weight: bold;
+        font-size: 1rem;
+        letter-spacing: 0;
+    }
+    #section1_anima_1-6 {
+        /* opacity: 0; */
+        position: relative;
+        top: -34px;
+        left: -4px;
+        font-family: 'Titillium Web', sans-serif;
+        color: rgba(8, 124, 250, .8);
+        font-weight: bold;
+        font-size: 1rem;
+        letter-spacing: 0;
+    }
+
+    #Skill-heading {
+        position: relative;
+        width: 99%;
+        height: 50px;
+        left: 50%;
+        top: -118px;
+        transform: translateX(-50%);
+
+    }
+    /*welcome banner*/
+    #section1_anima_1-0 {
+        opacity: 1;
+        width: 99%;
+        left: 0;
+        right: 0;
+        top: 10px;
+        font-size: 1.1rem;
+    }
+
+    .glitch {
+        opacity: 0;
+        width: 300px;
+        left: 0;
+        right: 0;
+        color: aliceblue;
+        /*font-size: 2em;*/
+    }
+
+    .glitch_text {
+        opacity: 1;
+        width: 99%;
+        left: 0;
+        right: 0;
+        top: 10px;
+        /* bottom: -159px; */
+        font-size: 1.1rem;
+    }
+    #main-container > div:nth-child(9) {
+        font-family: 'Titillium Web', sans-serif;
+        font-size: .95rem;
+        position: absolute;
+        width: 99%;
+        height: fit-content;
+        color: #d1dae8;
+        /* top: 420px; */
+        margin: auto;
+        left: 0;
+        right: 0;
+        bottom: 60px;
+        text-align: center;
+    }
+
+
 
     body > main > section:nth-child(2) > p:nth-child(1) {
         left: 40px;
