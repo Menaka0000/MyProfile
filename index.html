@@ -367,17 +367,24 @@
 
 </main>
 <footer></footer>
-<script crossorigin="anonymous"
-        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-        src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <script>
     $(window).on('load',function (){
-        $("#loader-container").css('display','none');
+        $("#loader-container").fadeOut(300);
 
         $("#section1_anima_1-0").css("-webkit-animation-name","anim1_0,anim1_0_1");
         $("#section1_anima_1-0").css("-webkit-animation-duration",".5s,.5s");
         $("#section1_anima_1-0").css("-webkit-animation-delay",".5s,4s");
         $("#section1_anima_1-0").css("-webkit-animation-fill-mode","forwards,forwards");
+
+        $(".glitch").css("animation-name","glitch");
+        $(".glitch").css("animation-duration",".5s");
+        $(".glitch").css("animation-delay","3.5s");
+
+        $(".glitch_text").css("animation-name","glitch");
+        $(".glitch_text").css("animation-duration",".5s");
+        $(".glitch_text").css("animation-delay","3.5s");
+
 
         setTimeout(setHeadings,4950);
         setInterval(setHeadings,12000);
