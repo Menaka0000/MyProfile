@@ -47,8 +47,8 @@ function deleteCustomer(id){
     for (let i = 0; i < customerDB.length; i++) {
         if (customerDB[i].getCusId() === id) {
             swal({
-                title: "Do you really want to remove this customer!",
-                text: "This will remove all the details of that customer and you can't get it back!",
+                title: "Warning",
+                text: "Do you really want to remove this customer ?\nThis will remove all the details of that customer and you can't get it back!",
                 icon: "warning",
                 buttons: true,
                 dangerMode: true,
@@ -118,8 +118,8 @@ function deleteItem(id){
     for (let i = 0; i < itemDB.length; i++) {
         if (itemDB[i].getItemId() === id) {
             swal({
-                title: "Do you really want to remove this item!",
-                text: "This will remove all the details of that item and you can't get it back!",
+                title: "Warning",
+                text: "Do you really want to remove this item ?\nThis will remove all the details of that item and you can't get it back!",
                 icon: "warning",
                 buttons: true,
                 dangerMode: true,

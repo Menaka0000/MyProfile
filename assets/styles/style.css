@@ -277,10 +277,10 @@ body > main > section:nth-child(1) > div:nth-child(2) > img {
     color: aliceblue;
     font-size: 2.8rem;
     /*animation: anim1_0 .5s 1 forwards, anim1_0_1 .5s forwards;*/
-    -webkit-animation-name: anim1_0, anim1_0_1;
+ /*   -webkit-animation-name: anim1_0, anim1_0_1;
     -webkit-animation-duration: .5s, .5s;
     -webkit-animation-delay: .5s, 4s;
-    -webkit-animation-fill-mode: forwards, forwards;
+    -webkit-animation-fill-mode: forwards, forwards;*/
 
 }
 

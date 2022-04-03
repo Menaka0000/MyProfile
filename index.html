@@ -7,6 +7,7 @@
     <meta content="This is my personal blog..." name="description">
     <meta content="width=device-width initial-scale=1" name="viewport">
     <link href="assets/styles/style.css" rel="stylesheet">
+    <link href="assets/styles/loader.css" rel="stylesheet">
     <script crossorigin="anonymous" src="https://kit.fontawesome.com/bc871e0fef.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.14.0/devicon.min.css" rel="stylesheet">
@@ -15,6 +16,12 @@
           rel="stylesheet">
 </head>
 <body>
+<div id="loader-container">
+    <div class="loader">
+        <div class="loader__figure"></div>
+        <p class="loader__label">JUST A MOMENT</p>
+    </div>
+</div>
 <header>
     <div>
         <nav>
@@ -356,89 +363,102 @@
             <div class="space-250"></div>
         </Section>
     </section>
+
+
 </main>
 <footer></footer>
 <script crossorigin="anonymous"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
         src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
 <script>
-    setTimeout(setHeadings,4950);
-    setInterval(setHeadings,12000);
-    setInterval(removeAnimation,11989);
+    $(window).on('load',function (){
+        $("#loader-container").css('display','none');
 
-    function setHeadings() {
-        $("#section1_anima_1-2").css("-webkit-animation-name","anim1_4,anim1_5");
-        $("#section1_anima_1-2").css("-webkit-animation-duration",".5s,.5s");
-        $("#section1_anima_1-2").css("-webkit-animation-delay","0s,3s");
-        $("#section1_anima_1-2").css("-webkit-animation-fill-mode","forwards,forwards");
+        $("#section1_anima_1-0").css("-webkit-animation-name","anim1_0,anim1_0_1");
+        $("#section1_anima_1-0").css("-webkit-animation-duration",".5s,.5s");
+        $("#section1_anima_1-0").css("-webkit-animation-delay",".5s,4s");
+        $("#section1_anima_1-0").css("-webkit-animation-fill-mode","forwards,forwards");
 
-        $("#section1_anima_1-3").css("-webkit-animation-name","anim1_3,anim1_2");
-        $("#section1_anima_1-3").css("-webkit-animation-duration",".5s,.5s");
-        $("#section1_anima_1-3").css("-webkit-animation-delay","0s,3s");
-        $("#section1_anima_1-3").css("-webkit-animation-fill-mode","forwards,forwards");
+        setTimeout(setHeadings,4950);
+        setInterval(setHeadings,12000);
+        setInterval(removeAnimation,11989);
 
-        $("#indicator1").css("display","block");
-        $("#indicator1").css("-webkit-animation-name","indicator1");
-        $("#indicator1").css("-webkit-animation-duration","3s");
-        $("#indicator1").css("-webkit-animation-delay","0s");
-        $("#indicator1").css("-webkit-animation-fill-mode","none");
+        function setHeadings() {
+            $("#section1_anima_1-2").css("-webkit-animation-name","anim1_4,anim1_5");
+            $("#section1_anima_1-2").css("-webkit-animation-duration",".5s,.5s");
+            $("#section1_anima_1-2").css("-webkit-animation-delay",".5s,3s");
+            $("#section1_anima_1-2").css("-webkit-animation-fill-mode","forwards,forwards");
 
+            $("#section1_anima_1-3").css("-webkit-animation-name","anim1_3,anim1_2");
+            $("#section1_anima_1-3").css("-webkit-animation-duration",".5s,.5s");
+            $("#section1_anima_1-3").css("-webkit-animation-delay","0s,3s");
+            $("#section1_anima_1-3").css("-webkit-animation-fill-mode","forwards,forwards");
 
-        $("#section1_anima_1-4").css("-webkit-animation-name","anim1_4,anim1_5");
-        $("#section1_anima_1-4").css("-webkit-animation-duration",".5s,.5s");
-        $("#section1_anima_1-4").css("-webkit-animation-delay","3.5s,6.5s");
-        $("#section1_anima_1-4").css("-webkit-animation-fill-mode","forwards,forwards");
-
-        $("#section1_anima_1-5").css("-webkit-animation-name","anim1_3,anim1_2");
-        $("#section1_anima_1-5").css("-webkit-animation-duration",".5s,.5s");
-        $("#section1_anima_1-5").css("-webkit-animation-delay","3.5s,6.5s");
-        $("#section1_anima_1-5").css("-webkit-animation-fill-mode","forwards,forwards");
-
-        $("#indicator2").css("display","block");
-        $("#indicator2").css("-webkit-animation-name","indicator2");
-        $("#indicator2").css("-webkit-animation-duration","3s");
-        $("#indicator2").css("-webkit-animation-delay","3.5s");
-        $("#indicator2").css("-webkit-animation-fill-mode","none");
+            $("#indicator1").css("display","block");
+            $("#indicator1").css("-webkit-animation-name","indicator1");
+            $("#indicator1").css("-webkit-animation-duration","3s");
+            $("#indicator1").css("-webkit-animation-delay","0s");
+            $("#indicator1").css("-webkit-animation-fill-mode","none");
 
 
-        $("#section1_anima_1-6").css("-webkit-animation-name","anim1_4,anim1_5");
-        $("#section1_anima_1-6").css("-webkit-animation-duration",".5s,.5s");
-        $("#section1_anima_1-6").css("-webkit-animation-delay","7s,10s");
-        $("#section1_anima_1-6").css("-webkit-animation-fill-mode","forwards,forwards");
+            $("#section1_anima_1-4").css("-webkit-animation-name","anim1_4,anim1_5");
+            $("#section1_anima_1-4").css("-webkit-animation-duration",".5s,.5s");
+            $("#section1_anima_1-4").css("-webkit-animation-delay","3.5s,6.5s");
+            $("#section1_anima_1-4").css("-webkit-animation-fill-mode","forwards,forwards");
 
-        $("#section1_anima_1-7").css("-webkit-animation-name","anim1_3,anim1_2");
-        $("#section1_anima_1-7").css("-webkit-animation-duration",".5s,.5s");
-        $("#section1_anima_1-7").css("-webkit-animation-delay","7s,10s");
-        $("#section1_anima_1-7").css("-webkit-animation-fill-mode","forwards,forwards");
+            $("#section1_anima_1-5").css("-webkit-animation-name","anim1_3,anim1_2");
+            $("#section1_anima_1-5").css("-webkit-animation-duration",".5s,.5s");
+            $("#section1_anima_1-5").css("-webkit-animation-delay","3.5s,6.5s");
+            $("#section1_anima_1-5").css("-webkit-animation-fill-mode","forwards,forwards");
 
-        $("#indicator3").css("display","block");
-        $("#indicator3").css("-webkit-animation-name","indicator3");
-        $("#indicator3").css("-webkit-animation-duration","3s");
-        $("#indicator3").css("-webkit-animation-delay","7s");
-        $("#indicator3").css("-webkit-animation-fill-mode","none");
+            $("#indicator2").css("display","block");
+            $("#indicator2").css("-webkit-animation-name","indicator2");
+            $("#indicator2").css("-webkit-animation-duration","3s");
+            $("#indicator2").css("-webkit-animation-delay","3.5s");
+            $("#indicator2").css("-webkit-animation-fill-mode","none");
 
-    }
 
-    function removeAnimation(){
-        let el1 = document.getElementById('section1_anima_1-2');
-        el1.style.animation = 'none';
-        let el2 = document.getElementById('section1_anima_1-4');
-        el2.style.animation = 'none';
-        let el3 = document.getElementById('section1_anima_1-6');
-        el3.style.animation = 'none';
-        let el4 = document.getElementById('section1_anima_1-3');
-        el4.style.animation = 'none';
-        let el5 = document.getElementById('section1_anima_1-5');
-        el5.style.animation = 'none';
-        let el6 = document.getElementById('section1_anima_1-7');
-        el6.style.animation = 'none';
-        let el7 = document.getElementById('indicator1');
-        el7.style.animation = 'none';
-        let el8 = document.getElementById('indicator2');
-        el8.style.animation = 'none';
-        let el9 = document.getElementById('indicator3');
-        el9.style.animation = 'none';
-    }
+            $("#section1_anima_1-6").css("-webkit-animation-name","anim1_4,anim1_5");
+            $("#section1_anima_1-6").css("-webkit-animation-duration",".5s,.5s");
+            $("#section1_anima_1-6").css("-webkit-animation-delay","7s,10s");
+            $("#section1_anima_1-6").css("-webkit-animation-fill-mode","forwards,forwards");
+
+            $("#section1_anima_1-7").css("-webkit-animation-name","anim1_3,anim1_2");
+            $("#section1_anima_1-7").css("-webkit-animation-duration",".5s,.5s");
+            $("#section1_anima_1-7").css("-webkit-animation-delay","7s,10s");
+            $("#section1_anima_1-7").css("-webkit-animation-fill-mode","forwards,forwards");
+
+            $("#indicator3").css("display","block");
+            $("#indicator3").css("-webkit-animation-name","indicator3");
+            $("#indicator3").css("-webkit-animation-duration","3s");
+            $("#indicator3").css("-webkit-animation-delay","7s");
+            $("#indicator3").css("-webkit-animation-fill-mode","none");
+
+        }
+
+        function removeAnimation(){
+            let el1 = document.getElementById('section1_anima_1-2');
+            el1.style.animation = 'none';
+            let el2 = document.getElementById('section1_anima_1-4');
+            el2.style.animation = 'none';
+            let el3 = document.getElementById('section1_anima_1-6');
+            el3.style.animation = 'none';
+            let el4 = document.getElementById('section1_anima_1-3');
+            el4.style.animation = 'none';
+            let el5 = document.getElementById('section1_anima_1-5');
+            el5.style.animation = 'none';
+            let el6 = document.getElementById('section1_anima_1-7');
+            el6.style.animation = 'none';
+            let el7 = document.getElementById('indicator1');
+            el7.style.animation = 'none';
+            let el8 = document.getElementById('indicator2');
+            el8.style.animation = 'none';
+            let el9 = document.getElementById('indicator3');
+            el9.style.animation = 'none';
+        }
+    });
+
 </script>
+
 </body>
 </html>
